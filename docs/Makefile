@@ -53,11 +53,11 @@ pages: slides html
 	git checkout gh-pages
 	cd .. && rm -rf * && cp -r /tmp/gh-pages/* . && git add . && \
 		git commit -m "Website en gh-pages actualizado" && git push origin gh-pages && \
-		git checkout master && git branch
+		git checkout main && git branch
 	@echo "move to the parent folder before working on the repository!"
 
 push: clean
-	git add -u -v && git commit && git push origin master
+	git add -u -v && git commit && git push origin main
 	$(BROWSER) $(GITHUBREPO) &
 
 clean:
