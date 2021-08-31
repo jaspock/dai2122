@@ -4,7 +4,7 @@
 Materiales de Desarrollo de Aplicaciones en Internet
 ====================================================
 
-Universitat d'Alacant, curso 2020–2021
+Universitat d'Alacant, curso 2021–2022
 --------------------------------------
 
 *«The web is more a social creation than a technical one», Tim Berners-Lee*
@@ -29,6 +29,10 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 13 sep
+      - Ya está publicado el enunciado de la primera práctica. Las clases de teoría y prácticas comienzan el día 14 de septiembre.
+
+
 ..    * - 11 Ene
 ..      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 4. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros. El apartado opcional de autenticación supone un máximo de 2 puntos de la nota final de la práctica. Escribe al profesor para cualquier aclaración sobre tu nota. *Nota:* no dejes de leer el anuncio del día 8 de enero que aparece más abajo ya que contiene información muy importante sobre los exámenes de enero de la asignatura.
 ..    * - 17 nov
@@ -39,8 +43,6 @@ Novedades
 ..      - En la sección ":ref:`label-actividades`" puedes encontrar las actividades a realizar antes de la clase del 22 de septiembre. Hay un pequeño cuestionario que tienes que rellenar antes de las 23.59 del día anterior. Recuerda que estos cuestionarios contribuyen a la nota final. Consulta tras cada clase la sección ":ref:`label-actividades`" para comprobar si esa semana hay que realizar actividades antes de la clase siguiente.
 ..    * - 13 sep
 ..      - Con la normativa actual, puedes seguir y superar la asignatura sin problemas por vía cien por cien telemática, con la única excepción de los exámenes finales de enero y julio que a día de hoy están previstos únicamente en modalidad presencial. No obstante, si lo deseas también puedes asisitir presencialmente a las clases que la universidad te indique a través de la aplicación de Docencia Dual de UACloud (pero únicamente a las sesiones que allí aparezcan reflejadas).
-    * - 13 sep
-      - Ya está publicado el enunciado de la primera práctica. Las clases de teoría y prácticas comienzan el día 15 de septiembre.
 
 .. _`web del departamento`: https://www.dlsi.ua.es/alumnes/index.cgi?id=val
 .. _`entrega de prácticas`: https://pracdlsi.dlsi.ua.es/index.cgi?id=val
@@ -61,7 +63,8 @@ Actividades previas a las clases
 .. - Antes de la clase del 13/10/2020: estudia el código y los vídeos de la actividad ":ref:`label-app-web-sencilla`" (duración total de los vídeos: unos 50 minutos; unos 35 a 1,5x). A continuación, contesta el `test sobre la aplicación web sencilla con JavaScript`_ (plazo límite: 12/10/2020, 23:59 horas).
 .. - Antes de la clase del 06/10/2020: estudia los vídeos de la actividad ":ref:`label-intro-js`" (duración total de los vídeos: unos 55 minutos; unos 40 a 1,5x). A continuación, contesta el `test sobre la introducción a JavaScript`_ (plazo límite: 05/10/2020, 23:59 horas). Utiliza tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
 .. - Antes de la clase del 29/09/2020: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-inline-css`", ":ref:`label-caja-css`" y ":ref:`label-posicionamiento-css`". A continuación, contesta el `test sobre el modelo de caja de CSS`_ (plazo límite: 28/09/2020, 23:59 horas). Recuerda utilizar tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
-- Antes de la clase del 22/09/2020: estudia los vídeos y practica con la actividad ":ref:`label-intro-css`" (duración total de los vídeos: unos 35 minutos; unos 25 a velocidad 1,5x). A continuación, contesta el `test sobre la introducción a CSS`_ (plazo límite: 21/09/2020, 23:59 horas). Utiliza tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
+
+- Antes de la clase del 21/09/2021: estudia los vídeos y practica con la actividad ":ref:`label-intro-css`" (duración total de los vídeos: unos 35 minutos; unos 25 a velocidad 1,5x). A continuación, contesta el `test sobre la introducción a CSS`_ (plazo límite: 20/09/2021, 23:59 horas). Utiliza tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales. Si tu ancho de banda te lo permite, puedes elegir explícitamente una resolución de 1080 píxeles.
 
 .. _`test sobre computación en la nube`: https://forms.gle/WUqR6Z3AaHKrqZ9J7
 .. _`test sobre Google Cloud Platform`: https://forms.gle/6cCTbvJWTekiHGLc9
