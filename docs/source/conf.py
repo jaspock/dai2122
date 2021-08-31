@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Desarrollo de Aplicaciones en Internet'
-copyright = '2020, Juan Antonio Pérez'
+copyright = '2021, Juan Antonio Pérez'
 author = 'Juan Antonio Pérez'
 
 
