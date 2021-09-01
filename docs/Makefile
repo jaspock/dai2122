@@ -51,7 +51,7 @@ pages: slides html
 	touch /tmp/gh-pages/.nojekyll
 	$(BROWSER) $(GITHUBPAGES) &
 	git checkout gh-pages
-	cd .. && rm -rf * && cp -r /tmp/gh-pages . && git add . && \
+	cd .. && rm -rf * && cp -r /tmp/gh-pages/* /tmp/gh-pages/.nojekyll . && git add . && \
 		git commit -m "Website en gh-pages actualizado" && git push origin gh-pages && \
 		git checkout main && git branch
 	@echo "move to the parent folder before working on the repository!"
