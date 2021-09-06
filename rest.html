@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -162,7 +162,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>6. Implementación de servicios web</li>
+      <li><span class="section-number">6. </span>Implementación de servicios web</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,7 +182,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="implementacion-de-servicios-web">
-<h1>6. Implementación de servicios web<a class="headerlink" href="#implementacion-de-servicios-web" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1><span class="section-number">6. </span>Implementación de servicios web<a class="headerlink" href="#implementacion-de-servicios-web" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Al estudiar anteriormente los servicios web, nos hemos centrado en el acceso a servicios ofrecidos por terceros; en este tema veremos cómo crear nuestros propios servicios web. Abordaremos el estudio de la arquitectura de servicios conocida como REST (por el inglés, <em>representation state transfer</em>), en la que los agentes proporcionan una interfaz con una semántica uniforme (que, básicamente, se corresponde con las operaciones para crear, recuperar, actualizar y borrar recursos), en lugar de interfaces arbitrarias o específicas de una aplicación concreta.</p>
 <div class="admonition important">
 <p class="admonition-title">Importante</p>
@@ -195,7 +195,7 @@
 </ul>
 </div>
 <div class="section" id="la-arquitectura-rest">
-<span id="label-curl"></span><h2>6.1. La arquitectura REST<a class="headerlink" href="#la-arquitectura-rest" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-curl"></span><h2><span class="section-number">6.1. </span>La arquitectura REST<a class="headerlink" href="#la-arquitectura-rest" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>REST es una arquitectura para implementar servicios web sobre el protocolo HTTP que es usada actualmente por la gran mayoría de APIs web. Bajo REST los recursos se representan mediante URLs y las acciones a realizar con ellos se indican mediante los correspondientes verbos de HTTP (principalmente, GET, POST, PUT y DELETE).</p>
 <div class="hazlotu admonition">
 <p class="admonition-title">Hazlo tú ahora</p>
@@ -262,7 +262,7 @@ curl --request DELETE --header &#39;content-type:application/json&#39; $endpoint
 <p>En JavaScript tenemos funciones como <code class="docutils literal notranslate"><span class="pre">decodeURIComponent</span></code>, <code class="docutils literal notranslate"><span class="pre">decodeURI</span></code>, <code class="docutils literal notranslate"><span class="pre">encodeURIComponent</span></code> y <code class="docutils literal notranslate"><span class="pre">encodeURI</span></code> que se encargan del trabajo de conversión. Para codificar un símbolo para el programa <code class="docutils literal notranslate"><span class="pre">curl</span></code> que se ejecuta en la línea de órdenes podemos usar <a class="reference external" href="https://meyerweb.com/eric/tools/dencoder/">herramientas en línea</a>.</p>
 </div>
 <div class="section" id="envio-de-peticiones-desde-javascript">
-<span id="label-cliente-rest"></span><h2>6.2. Envío de peticiones desde JavaScript<a class="headerlink" href="#envio-de-peticiones-desde-javascript" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-cliente-rest"></span><h2><span class="section-number">6.2. </span>Envío de peticiones desde JavaScript<a class="headerlink" href="#envio-de-peticiones-desde-javascript" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Ahora vamos a ver cómo interactuar con la API del carrito desde JavaScript (en concreto, usando la API Fetch que hemos estudiado antes) por medio de una aplicación web de <a class="reference external" href="https://whispering-plains-89598.herokuapp.com/carrito.html">gestión de carritos de la compra</a>. Abre las DevTools de Google Chrome y estudia cada una de las peticiones Fetch realizadas por la aplicación. El código de este cliente de la API es el siguiente, que apenas incorpora novedades:</p>
 <div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
   2
@@ -810,7 +810,7 @@ curl --request DELETE --header &#39;content-type:application/json&#39; $endpoint
 <p>El código anterior muestra cómo hacer con <code class="docutils literal notranslate"><span class="pre">fetch</span></code> peticiones con verbos de HTTP diferentes a <code class="docutils literal notranslate"><span class="pre">GET</span></code>, y que incluyen información tanto en las cabeceras como en el bloque de datos (<em>payload</em>).</p>
 </div>
 <div class="section" id="programacion-de-servicios-web-en-node-js">
-<span id="label-servidor-rest"></span><h2>6.3. Programación de servicios web en Node.js<a class="headerlink" href="#programacion-de-servicios-web-en-node-js" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-servidor-rest"></span><h2><span class="section-number">6.3. </span>Programación de servicios web en Node.js<a class="headerlink" href="#programacion-de-servicios-web-en-node-js" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los servicios web se pueden programar en prácticamente cualquier lenguaje de programación existente hoy día. Para implementar el servicio web al que hemos accedido desde el cliente mostrado en la actividad anterior hemos usado JavaScript con Node.js y el <em>framework</em> para desarrollo de aplicaciones web <a class="reference external" href="https://expressjs.com/">Express.js</a>. Lo siguiente es el código de la parte del servidor. Más abajo, después del código, se comentan sus principales elementos.</p>
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
   2
@@ -1470,7 +1470,7 @@ curl --request DELETE --header &#39;content-type:application/json&#39; $endpoint
 <p>La función de <em>middleware</em> <code class="docutils literal notranslate"><span class="pre">express.static</span></code>, ya definida en el <em>framework</em>, permite indicar un directorio que contiene recursos estáticos (una imagen o una hoja de estilo, por ejemplo) a los que puede acceder el cliente. En nuestro código se llama a <code class="docutils literal notranslate"><span class="pre">app.use</span></code> para vincular dicha función a la ruta raíz y poder servir desde ella los archivos incluidos en la carpeta <code class="docutils literal notranslate"><span class="pre">public</span></code>. El argumento de <code class="docutils literal notranslate"><span class="pre">express.static</span></code> se interpreta, por defecto, como un directorio relativo al directorio actual. Normalmente nos interesará especificar la ruta absoluta, lo que se consigue añadiéndole como prefijo el contenido de la variable global de Node.js <code class="docutils literal notranslate"><span class="pre">__dirname</span></code>, que contiene la ruta absoluta del fichero de JavaScript que se está ejecutando.</p>
 </div>
 <div class="section" id="interfaz-comun-de-acceso-a-bases-de-datos">
-<h3>6.3.1. Interfaz común de acceso a bases de datos<a class="headerlink" href="#interfaz-comun-de-acceso-a-bases-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.3.1. </span>Interfaz común de acceso a bases de datos<a class="headerlink" href="#interfaz-comun-de-acceso-a-bases-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Como queremos que nuestra aplicación web pueda funcionar en distintas plataformas y estas usan distintos gestores de bases de datos (Heroku permite usar PostgreSQL, Google Cloud Platform permite usar MySQL, y en modo local vamos a usar una base de datos <em>ligera</em> mediante SQLite para hacer pruebas), nos interesa no tener que escribir código diferente para cada sistema de base de datos. Node.js no tiene un equivalente exacto a, por ejemplo, la tecnología JDBC de Java, pero el paquete <a class="reference external" href="http://knexjs.org/">Knex.js</a> (pronunciado como <em>konnex</em>) se acerca bastante al permitirnos interactuar con diferentes gestores de bases de datos con una interfaz única. Con Knex.js usaremos funciones para construir las consultas a la base de datos que serán transformadas internamente en instrucciones SQL; las peticiones a la base de datos son asíncronas y se gestionan mediante promesas o mediante <em>callbacks</em>. Las funciones que a este respecto se usan en el código son bastante autoexplicativas y es muy sencillo deducir cuál es su transformación en SQL. Por ejemplo, las líneas de código:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span> <span class="nx">await</span> <span class="nx">knex</span><span class="p">(</span><span class="s1">&#39;productos&#39;</span><span class="p">).</span><span class="nx">select</span><span class="p">([</span><span class="s1">&#39;item&#39;</span><span class="p">,</span><span class="s1">&#39;cantidad&#39;</span><span class="p">])</span>
                               <span class="p">.</span><span class="nx">where</span><span class="p">(</span><span class="s1">&#39;carrito&#39;</span><span class="p">,</span><span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">carrito</span><span class="p">)</span>
@@ -1485,7 +1485,7 @@ curl --request DELETE --header &#39;content-type:application/json&#39; $endpoint
 El pequeño fragmento de código anterior y el código completo del servidor de esta actividad usan una palabra reservada de JavaScript (<code class="docutils literal notranslate"><span class="pre">await</span></code>) que no conocíamos. Vamos a ver a continuación, como por medio de ella podemos simplificar la escritura de código que usa promesas y se hace innecesario el uso de los métodos <code class="docutils literal notranslate"><span class="pre">then</span></code> y <code class="docutils literal notranslate"><span class="pre">catch</span></code>.</p>
 </div>
 <div class="section" id="async-await">
-<h3>6.3.2. Async/await<a class="headerlink" href="#async-await" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.3.2. </span>Async/await<a class="headerlink" href="#async-await" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Las promesas de la API Fetch son, como hemos visto, una forma muy conveniente de gestionar peticiones a un servidor, pero cuando la llamada a un servicio web depende del resultado de una llamada anterior a otro servicio web y este anidamiento se va haciendo más y más complejo, la escritura del código puede ser dificultosa y afectar negativamente a su legibilidad. Para simplificarlo, entre otros motivos, se añadieron a JavaScript los modificadores <code class="docutils literal notranslate"><span class="pre">async</span></code> y <code class="docutils literal notranslate"><span class="pre">await</span></code>.</p>
 <p>Una función anotada con <code class="docutils literal notranslate"><span class="pre">async</span></code> siempre devuelve una promesa. Si la función ya devuelve una promesa, el intérprete no tiene más que hacer. Si devuelve otro tipo de valor, el intérprete crea una promesa que se resuelve (se cumple) directamente con el valor devuelto. Si la función asíncrona lanza una excepción, esta se envuelve en una promesa incumplida.</p>
 <p>Observa cómo la siguiente función devuelve una promesa:</p>
@@ -1571,17 +1571,17 @@ El pequeño fragmento de código anterior y el código completo del servidor de 
 </div>
 </div>
 <div class="section" id="configuracion-del-entorno-de-trabajo-para-ejecutar-localmente-una-aplicacion-web">
-<span id="label-local"></span><h2>6.4. Configuración del entorno de trabajo para ejecutar localmente una aplicación web<a class="headerlink" href="#configuracion-del-entorno-de-trabajo-para-ejecutar-localmente-una-aplicacion-web" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-local"></span><h2><span class="section-number">6.4. </span>Configuración del entorno de trabajo para ejecutar localmente una aplicación web<a class="headerlink" href="#configuracion-del-entorno-de-trabajo-para-ejecutar-localmente-una-aplicacion-web" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En esta actividad se explica cómo configurar el entorno de trabajo para poder lanzar aplicaciones web escritas en Node.js que usan una base de datos SQLite3. Se ofrecen dos vías: una rápida que permite instalar todos los programas necesarios con un <em>script</em> para Linux y otra que requiere ir instalándolos uno a uno.</p>
 <div class="section" id="instalacion-rapida-en-linux">
-<h3>6.4.1. Instalación rápida en Linux<a class="headerlink" href="#instalacion-rapida-en-linux" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.4.1. </span>Instalación rápida en Linux<a class="headerlink" href="#instalacion-rapida-en-linux" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El sistema operativo <em>oficial</em> en esta asignatura es Linux. Puedes utilizar otros sistemas operativos para desarrollar, pero tendrás que solucionar tú mismo los problemas relacionados con la configuración del entorno de trabajo que te encuentres. Las instrucciones que siguen son para el sistema operativo Linux, pero es muy probable que las puedas ignorar si usas el fichero <a class="reference external" href="https://www.dlsi.ua.es/~japerez/cursos/dai/dai-bundle-dev-20191206.tar.gz">dai-bundle-dev</a> para instalar los programas necesarios. Para ello, descarga el fichero, descomprímelo y ejecuta el script <code class="docutils literal notranslate"><span class="pre">install.sh</span></code>.</p>
 <p>Puedes editar el fichero para indicar qué programas quieres instalar. El script solo instala Node.js por defecto. Comprueba si tienes instalado <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code> en tu ordenador para saber si lo necesitas y pon a <code class="docutils literal notranslate"><span class="pre">true</span></code> la variable correspondiente en caso negativo. El script también permite instalar el SDK de Google Cloud Platform, que usaremos más adelante.</p>
 <p>El script, además, funciona sin problemas en el sistema Linux instalado en los ordenadores de los laboratorios, donde SQLite3 ya está instalado.</p>
 <p>Si todo ha ido bien, puedes saltar el siguiente apartado y pasar a ejecutar directamente la aplicación del carrito como se comenta en «<a class="reference internal" href="#label-prueba-carrito"><span class="std std-ref">Prueba de la aplicación del carrito</span></a>».</p>
 </div>
 <div class="section" id="instalacion-paso-a-paso">
-<h3>6.4.2. Instalación paso a paso<a class="headerlink" href="#instalacion-paso-a-paso" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.4.2. </span>Instalación paso a paso<a class="headerlink" href="#instalacion-paso-a-paso" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Comienza instalando <a class="reference external" href="https://nodejs.org/">Node.js</a>, el entorno que te permitirá ejecutar programas en JavaScript fuera del navegador. Las instrucciones para cada sistema operativo son diferentes. Para el caso de Linux, la instalación se puede realizar fácilmente sin necesidad de tener privilegios de administrador descargando uno de los <a class="reference external" href="https://nodejs.org/en/download/releases/">paquetes disponibles</a> en la web de Node.js.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -1626,7 +1626,7 @@ echo &#39;export PATH=$HOME/sqlite-tools-linux-x86-3300100:$PATH&#39; &gt;&gt; $
 </div>
 </div>
 <div class="section" id="prueba-de-la-aplicacion-del-carrito">
-<span id="label-prueba-carrito"></span><h3>6.4.3. Prueba de la aplicación del carrito<a class="headerlink" href="#prueba-de-la-aplicacion-del-carrito" title="Enlazar permanentemente con este título">¶</a></h3>
+<span id="label-prueba-carrito"></span><h3><span class="section-number">6.4.3. </span>Prueba de la aplicación del carrito<a class="headerlink" href="#prueba-de-la-aplicacion-del-carrito" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>A continuación, descarga el código del cliente y del servidor de la aplicación del carrito; clona para ello el <a class="reference external" href="https://github.com/jaspock/dai2021">repositorio de la asignatura</a> haciendo:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jaspock</span><span class="o">/</span><span class="n">dai2021</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
@@ -1654,7 +1654,7 @@ echo &#39;export PATH=$HOME/sqlite-tools-linux-x86-3300100:$PATH&#39; &gt;&gt; $
 </div>
 </div>
 <div class="section" id="depuracion-y-prueba-de-la-aplicacion">
-<h3>6.4.4. Depuración y prueba de la aplicación<a class="headerlink" href="#depuracion-y-prueba-de-la-aplicacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.4.4. </span>Depuración y prueba de la aplicación<a class="headerlink" href="#depuracion-y-prueba-de-la-aplicacion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Si deseas depurar el código del servidor en modo local puedes usar el editor de texto <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. Abre con él el fichero <code class="docutils literal notranslate"><span class="pre">app.js</span></code> y selecciona <span class="guilabel">Run / Start debugging</span>. Puedes definir puntos de ruptura haciendo click en el borde de la línea de código oportuna.</p>
 <blockquote>
 <div></div></blockquote>
@@ -1685,7 +1685,7 @@ echo &#39;export PATH=$HOME/sqlite-tools-linux-x86-3300100:$PATH&#39; &gt;&gt; $
 </div>
 </div>
 <div class="section" id="modificacion-de-la-api-rest">
-<span id="label-api-cambio"></span><h2>6.5. Modificación de la API REST<a class="headerlink" href="#modificacion-de-la-api-rest" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-api-cambio"></span><h2><span class="section-number">6.5. </span>Modificación de la API REST<a class="headerlink" href="#modificacion-de-la-api-rest" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En esta actividad, vas a realizar una pequeña modificación a la API del carrito y a la aplicación web que la utiliza. El desarrollo lo realizarás en tu máquina y, cuando hayas comprobado que todo funciona correctamente, lo subirás en la siguiente actividad a un servidor de aplicaciones en la nube.</p>
 <div class="admonition hint">
 <p class="admonition-title">Consejo</p>
@@ -1698,7 +1698,7 @@ echo &#39;export PATH=$HOME/sqlite-tools-linux-x86-3300100:$PATH&#39; &gt;&gt; $
 </div>
 </div>
 <div class="section" id="despliegue-de-la-aplicacion-web-en-heroku">
-<span id="label-heroku"></span><h2>6.6. Despliegue de la aplicación web en Heroku<a class="headerlink" href="#despliegue-de-la-aplicacion-web-en-heroku" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-heroku"></span><h2><span class="section-number">6.6. </span>Despliegue de la aplicación web en Heroku<a class="headerlink" href="#despliegue-de-la-aplicacion-web-en-heroku" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Cuando tengas la aplicación lista en modo local, puedes desplegarla en la plataforma en la nube de <a class="reference external" href="https://www.heroku.com/">Heroku</a> como sigue.
 Copia para empezar la carpeta <code class="docutils literal notranslate"><span class="pre">dai2021/code/carrito</span></code> en otra ubicación de tu sistema. Al copiar la carpeta a una ubicación diferente haces que su contenido no esté ligado al repositorio de Github, ya que para desplegar la aplicación en Heroku necesitas vincularla a otro repositorio.</p>
 <p>Instala el cliente de línea de órdenes (CLI, por <em>command-line interface</em>) de Heroku con las <a class="reference external" href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">instrucciones de esta página</a>. En el caso de Linux basta con descargar el fichero con los binarios, descomprimirlo y añadir la carpeta <code class="docutils literal notranslate"><span class="pre">bin</span></code> a la variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> del sistema:</p>
@@ -1763,7 +1763,7 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 <p>Finalmente, puedes usar el <a class="reference external" href="https://dashboard.heroku.com/">panel de control</a> de tu aplicación en Heroku para acceder a ciertas opciones adicionales de configuración. Por otro lado, en el panel de control de la <a class="reference external" href="https://data.heroku.com/">base de datos</a> PostgreSQL puedes visitar la sección <span class="guilabel">Dataclips</span> para poder ver las tablas de tu base de datos y lanzar consultas SQL sobre ellas.</p>
 </div>
 <div class="section" id="la-politica-del-mismo-origen-y-el-estandar-cors">
-<span id="label-cors"></span><h2>6.7. La política del mismo origen y el estándar CORS<a class="headerlink" href="#la-politica-del-mismo-origen-y-el-estandar-cors" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-cors"></span><h2><span class="section-number">6.7. </span>La política del mismo origen y el estándar CORS<a class="headerlink" href="#la-politica-del-mismo-origen-y-el-estandar-cors" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Todos los navegadores implementan una restricción conocida como <em>política del mismo origen</em> (en inglés, <em>same-origin policy</em>), un concepto de seguridad existente desde la época de Netscape 2.0 para peticiones basadas en XHR o en la API Fetch. Esta política impide por defecto que desde un script bajado de un determinado servidor se realicen peticiones a servicios web disponibles en un servidor con un dominio diferente. Permitir este tipo de accesos abre la puerta a toda una serie de potenciales problemas: por ejemplo, <em>MaliciousSite.com</em> usa los servicios web de la web de <em>MyBank.com</em> (en la que el usuario tiene sesión abierta en otra pestaña del navegador) para obtener información confidencial; los servicios web de <em>MyBank.com</em> devuelven la información solicitada porque el usuario está autenticado y la <em>cookie</em> de autenticación es enviada por el navegador junto con la petición; el script con origen <em>MaliciousSite.com</em> puede ahora compartir esta información con otros servidores.</p>
 <p>Si la política del mismo origen no pudiera evitarse, muchas aplicaciones web que usan servicios web <em>de terceros</em> desde el cliente no podrían existir o deberían implementar un <em>proxy</em> a dichos servicios web en su propio servidor (es decir, el cliente realizaría una petición a su servidor y desde este, donde ya no existe la restricción del mismo origen al no haber navegador ni riesgos, se realizaría la petición al servidor de terceros). Por ello, los navegadores permiten bajo determinadas condiciones que estos accesos puedan realizarse. En particular, la técnica estándar CORS (<em>cross-origin resource sharing</em>) utiliza la cabecera <code class="docutils literal notranslate"><span class="pre">Origin</span></code> (que es añadida por el navegador y no puede modificarse desde JavaScript) en la petición para informar al servidor del origen del código que está haciendo la solicitud. El servidor puede autorizar o denegar entonces el acceso añadiendo a la respuesta un valor adecuado en la cabecera <code class="docutils literal notranslate"><span class="pre">Access-Control-Allow-Origin</span></code>; si el valor de esta última cabecera en la respuesta coincide con el valor de <code class="docutils literal notranslate"><span class="pre">Origin</span></code> en la petición o si toma un valor como <cite>*</cite>, entonces el navegador autoriza el acceso.</p>
 <div class="admonition note">
@@ -1780,7 +1780,7 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 <p>Finalmente, es importante resaltar que estas restricciones afectan a los servicios web a los que se intenta acceder desde un navegador. Una aplicación de escritorio o un programa ejecutándose en un servidor no tienen estas restricciones.</p>
 </div>
 <div class="section" id="peticiones-cors">
-<h3>6.7.1. Peticiones CORS<a class="headerlink" href="#peticiones-cors" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">6.7.1. </span>Peticiones CORS<a class="headerlink" href="#peticiones-cors" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="hazlotu admonition">
 <p class="admonition-title">Hazlo tú ahora</p>
 <p>La API REST del carrito soporta peticiones Fetch realizadas desde programas en JavaScript descargados de dominios diferentes al dominio en el que está ubicada la API. Para comprobarlo, abre el fichero <code class="docutils literal notranslate"><span class="pre">carrito.html</span></code> desde un servidor web local; recuerda cambiar antes la variable <code class="docutils literal notranslate"><span class="pre">base</span></code> de JavaScript para que apunte al correspondiente <em>endpoint</em> de la API que se está ejecutando en otro puerto u otro servidor (el de Heroku, por ejemplo). Estudia el <em>middleware</em> del código del servidor que gestiona la respuesta.</p>
@@ -1799,7 +1799,7 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 </div>
 </div>
 <div class="section" id="autenticacion-de-usuarios">
-<span id="label-signin"></span><h2>6.8. Autenticación de usuarios<a class="headerlink" href="#autenticacion-de-usuarios" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-signin"></span><h2><span class="section-number">6.8. </span>Autenticación de usuarios<a class="headerlink" href="#autenticacion-de-usuarios" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una componente importante de la mayoría de aplicaciones web es la que permite que los usuarios se identifiquen o autentiquen en la aplicación y puedan gestionar así sus propios datos. La gestión de cuentas de usuario requiere un esfuerzo adicional (validación de cuentas de correo electrónico, almacenamiento seguro de las contraseñas, gestión de ataques cibernéticos, olvidos de contraseña, etc.) que podemos delegar en servicios de terceros como Facebook Login o Google Sign-in; este último será el que usaremos en esta actividad. De esta forma, el usuario se identifica en una ventana del navegador vinculada a un URL de Google y autoriza a nuestra aplicación a acceder a cierta información de su perfil (nombre y correo electrónico, por ejemplo) sin compartir el resto de sus datos (o permitiendo el acceso a un subconjunto de ellos, como, por ejemplo, los ficheros almacenados en una carpeta de Google Drive).</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -2441,7 +2441,7 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 <div></div></blockquote>
 </div>
 <div class="section" id="terminos-de-uso-de-las-apis-web">
-<h2>6.9. Términos de uso de las APIs web<a class="headerlink" href="#terminos-de-uso-de-las-apis-web" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><span class="section-number">6.9. </span>Términos de uso de las APIs web<a class="headerlink" href="#terminos-de-uso-de-las-apis-web" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Aunque no lo estudiaremos en esta asignatura, hay que tener en cuenta que existen en la web multitud de APIs disponibles para su uso desde aplicaciones de terceros, pero estas APIs suelen tener términos de uso (mira las condiciones de la <a class="reference external" href="https://developer.twitter.com/en/developer-terms/agreement-and-policy">API de Twitter</a>, por ejemplo) que es importante leer antes de decidirse a basar una determinada aplicación en ellas.</p>
 </div>
 </div>

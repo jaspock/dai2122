@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -145,7 +145,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>4. Acceso a servicios web de terceros</li>
+      <li><span class="section-number">4. </span>Acceso a servicios web de terceros</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -165,7 +165,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="acceso-a-servicios-web-de-terceros">
-<h1>4. Acceso a servicios web de terceros<a class="headerlink" href="#acceso-a-servicios-web-de-terceros" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1><span class="section-number">4. </span>Acceso a servicios web de terceros<a class="headerlink" href="#acceso-a-servicios-web-de-terceros" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Los <em>servicios web</em> proporcionan una forma estándar de interoperabilidad entre diferentes aplicaciones, posiblemente heterogéneas. En este tema, veremos cómo acceder a servicios desde nuestras aplicaciones web, así como su relación con el estándar HTTP. En este tema nos centraremos en el acceso a servicios web ofrecidos por terceros; posteriormente, veremos cómo definir nuestros propios servicios web.</p>
 <div class="admonition important">
 <p class="admonition-title">Importante</p>
@@ -179,7 +179,7 @@
 </ul>
 </div>
 <div class="section" id="el-protocolo-http">
-<span id="label-servicios-http"></span><h2>4.1. El protocolo HTTP<a class="headerlink" href="#el-protocolo-http" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-servicios-http"></span><h2><span class="section-number">4.1. </span>El protocolo HTTP<a class="headerlink" href="#el-protocolo-http" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>HTTP (por <em>hypertext transfer protocol</em>) es el protocolo de comunicación (a nivel de capa de aplicación) diseñado para permitir el envío de información en la <em>world wide web</em> entre distintos ordenadores. Sus primeras versiones fueron desarrolladas en la década de los noventa a partir de los trabajos de Tim Berners Lee y su equipo (los creadores de la web). Las diferentes versiones del estándar son coordinadas por el <a class="reference external" href="https://httpwg.org/">HTTP Working Group</a> de la Internet Engineering Task Force. HTTP/1.1 se publicó en 1997, HTTP/2 en 2015 y HTTP/3 en 2018, aunque tanto navegadores como servidores siguen soportando las versiones antiguas y son capaces de adaptarse para usar el mismo protocolo: por ejemplo, un navegador reciente que soporte HTTP/3 usará HTTP/2 o incluso HTTP/1.1 al comunicarse con un servidor que no haya sido actualizado en mucho tiempo. HTTP/3, a diferencia de anteriores versiones, ya no se apoya en el protocolo de transporte TCP (<em>transmission control protocol</em>), sino que usa QUIC (que no son siglas, sino un término que pretende evocar a la palabra inglesa <em>quick</em>). QUIC mejora la capacidad de multiplexación de TCP y suele mejorar la latencia y velocidad de las conexiones.</p>
 <div class="hazlotu admonition">
 <p class="admonition-title">Hazlo tú ahora</p>
@@ -188,7 +188,7 @@
 <p>Los conceptos que tienes que comprender del protocolo HTTP se encuentran recogidos en <a class="reference external" href="_static/slides/050-http-slides.html">estas diapositivas</a>.</p>
 </div>
 <div class="section" id="herramientas-para-desarrolladores">
-<h2>4.2. Herramientas para desarrolladores<a class="headerlink" href="#herramientas-para-desarrolladores" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><span class="section-number">4.2. </span>Herramientas para desarrolladores<a class="headerlink" href="#herramientas-para-desarrolladores" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Las herramientas para desarrolladores que incorporan los navegadores permiten estudiar los detalles de todas las conexiones establecidas por el navegador al ejecutar una aplicación web.</p>
 <p>Las peticiones lanzadas desde la barra de direcciones del navegador son siempre de tipo GET. Para estudiar los otros tipos de peticiones de HTTP, necesitamos crear un formulario para peticiones de tipo POST, o, si queremos poder usar cualquier verbo, escribir código en JavaScript (usando la API Fetch que estudiáremos después) u otro lenguaje de programación. También hay herramientas como <a class="reference external" href="https://www.getpostman.com/">Postman</a>, una aplicación que permite crear cómodamente colecciones de peticiones a APIs (<em>application programming interfaces</em>). La herramienta <a class="reference external" href="https://curl.haxx.se/">curl</a> es similar pero funciona desde la línea de órdenes.</p>
 <div class="hazlotu admonition">
@@ -197,7 +197,7 @@
 </div>
 </div>
 <div class="section" id="promesas-de-javascript">
-<span id="label-servicios-promesas"></span><h2>4.3. Promesas de JavaScript<a class="headerlink" href="#promesas-de-javascript" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-servicios-promesas"></span><h2><span class="section-number">4.3. </span>Promesas de JavaScript<a class="headerlink" href="#promesas-de-javascript" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los objetos de tipo <code class="docutils literal notranslate"><span class="pre">Promise</span></code> (una clase definida en la API de JavaScript de los navegadores modernos) se usan para representar la finalización con éxito de una tarea (normalmente asíncrona, es decir, que no bloquea el bucle de eventos, sino que define una función de <em>callback</em> que será ejecutada más adelante) o su fracaso. En términos informales, diremos que una promesa se cumple (en caso de éxito), se incumple (en caso de fracaso) o que está pendiente (cuando aún no se ha resuelto); en inglés se usan los términos <em>fullfilled</em>, <em>rejected</em> o <em>pending</em>, respectivamente. Los objetos promesa nos serán muy útiles en tareas como la comunicación con un servidor, que veremos más adelante en este tema.</p>
 <p>Veamos un primer ejemplo. El siguiente código crea un objeto de tipo promesa <code class="docutils literal notranslate"><span class="pre">p</span></code> invocando al constructor de <code class="docutils literal notranslate"><span class="pre">Promise</span></code>. Este constuctor recibe como parámetro una función llamada <em>función ejecutora</em> con el código que nosotros definamos para intentar cumplir la promesa.</p>
 <p>El constructor de <code class="docutils literal notranslate"><span class="pre">Promise</span></code> creará dos funciones: una que nuestro código tendrá que invocar si la tarea prometida se ha podido llevar a cabo; otra que nuestro código invocará en caso contrario. Para poder llamar a estas funciones nuestra función ejecutora tiene dos parámetros por los que recibe referencias a ellas (recuerda que las dunciones son objetos en JavaScript). Por tanto, estas dos funciones (parámetros <code class="docutils literal notranslate"><span class="pre">resolve</span></code> y <code class="docutils literal notranslate"><span class="pre">reject</span></code> en el código de abajo) serán invocadas en los lugares de nuestro código en los que determinemos que la tarea se ha desarrollado con éxito (en el caso del primer parámetro) o ha fracasado (para la función pasada como segundo parámetro).</p>
@@ -581,7 +581,7 @@
 </td></tr></table></div>
 </div>
 <div class="section" id="los-objetos-de-tipo-xmlhttprequest">
-<span id="label-servicios-xhr"></span><h2>4.4. Los objetos de tipo XMLHttpRequest<a class="headerlink" href="#los-objetos-de-tipo-xmlhttprequest" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-servicios-xhr"></span><h2><span class="section-number">4.4. </span>Los objetos de tipo XMLHttpRequest<a class="headerlink" href="#los-objetos-de-tipo-xmlhttprequest" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En los primeros años de la web, la mayoría de las aplicaciones web seguían el siguiente patrón de comportamiento al realizar, por ejemplo, una búsqueda de un determinado elemento en una base de datos: el usuario rellenaba los valores correspondientes para buscar el elemento en un formulario y pulsaba el botón de enviar; en ese momento, el navegador realizaba una petición al servidor y borraba la página web actual; el servidor realizaba la búsqueda en la base de datos y devolvía entonces una página web completa que el navegador mostraba en sustitución de la anterior. Además de generar una experiencia incómoda al usuario si se compara con una aplicación tradicional de escritorio (el usuario ha de esperar a que se cargue de nuevo toda la página para seguir interactuando con la aplicación), este procedimiento es muy ineficiente cuando la página web tiene mucho contenido que apenas cambia, y que, sin embargo, es enviado continuamente por el servidor.</p>
 <p>A partir de finales de los noventa y especialmente en los primeros años del siglo XXI, los desarrolladores comienzan a explotar el uso de funcionalidades de los navegadores que permiten realizar peticiones a un servidor sin tener que recargar la página completa. A estas técnicas se les denomina Ajax por razones históricas: el término lo acuñó un desarrollador en 2005 como acrónimo de <em>Asynchronous JavaScript and XML</em>. Con Ajax, los datos devueltos por el servidor se usan para generar dinámicamente HTML que es insertado convenientemente en el árbol DOM, conformando lo que se conoce como <em>aplicaciones de una solo página</em> (<em>single-page applications</em>). La más usada de las técnicas Ajax se basaba en los objetos de clase <code class="docutils literal notranslate"><span class="pre">XMLHttpRequest</span></code> (para abreviar se suele llamar <em>XHR</em>) que permite, como se ha comentado, solicitar (normalmente de forma asícrona) una serie de datos al servidor desde JavaScript en lugar de una página completa que reemplazará a la actual. Estos datos serán, entonces, procesados por una función definida por el programador.</p>
 <div class="hazlotu admonition">
@@ -705,7 +705,7 @@
 </div>
 </div>
 <div class="section" id="la-api-fetch">
-<span id="label-servicios-fetch"></span><h2>4.5. La API Fetch<a class="headerlink" href="#la-api-fetch" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-servicios-fetch"></span><h2><span class="section-number">4.5. </span>La API Fetch<a class="headerlink" href="#la-api-fetch" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En los últimos años, sin embargo, los navegadores han comenzado a implementar la API Fetch (desarrollada por el WHATWG, Web Hypertext Application Technology Working Group, que también supervisa la evolución de otros estándares como HTML o la API DOM), que es una forma más potente, extensible y flexible de acceder a recursos externos. Usando esta API en lugar de XHR, el código mostrado anteriormente quedaría como sigue:</p>
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
