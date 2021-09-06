@@ -1,12 +1,12 @@
 % Desarrollo de Aplicaciones en Internet
 % Universitat d'Alacant
-% 2020&mdash;2021
+% 2021&mdash;2022
 
 ## Profesor y tutoría
 
 - Juan Antonio Pérez Ortiz, Departamento de Lenguajes y Sistemas Informáticos
 - Edificio Politécnica 4, módulo 2, planta 2
-- Tutoría virtual previa reserva a través de UACloud en el enlace allí indicado
+- Tutoría previa reserva a través de UACloud en el enlace allí indicado
 
 ## Contenido de la asignatura
 
@@ -23,7 +23,7 @@
 ## Actividades
 
 - Actividades a realizar en casa (peso: 20%)
-- Para algunos temas se seguirá un enfoque de clase invertida: 
+- Para la mayoría de los temas se seguirá un enfoque de clase invertida: 
     - visionado de vídeos o lectura de materiales antes de clase
     - realización de un pequeño cuestionario
     - resolución de problemas en clase
@@ -33,7 +33,7 @@
 
 - Desarrollo individual e incremental de una aplicación web
 - Asistencia obligatoria, pero se admite un máximo de 4 faltas sin justificar
-- Fechas aproximadas de entrega: 8 octubre, 29 octubre, 19 noviembre, 3 diciembre, 23 diciembre
+- Fechas aproximadas de entrega: 7 octubre, 4 noviembre, 25 noviembre, 23 diciembre
 - Peso: 40% de la nota final (sin nota mínima)
 
 ## Plagios
@@ -41,7 +41,8 @@
 - Se puede discutir con los compañeros diferentes soluciones o estrategias
 - No se puede copiar código
 - El plagio suele ser fácil de detectar. El esfuerzo para engañar a los sistemas antiplagio puede ser mayor que el de hacer la práctica
-- El Reglamento para la Evaluación de los aprendizajes de la UA y la normativa de la EPS definen los procedimientos y sanciones en caso de fraude académico
+- El Reglamento para la Evaluación de los aprendizajes de la UA y la normativa de la EPS definen los procedimientos y sanciones en caso de fraude académico.
+- La Ley de Convicencia Universitaria de 2021 es una norma de rango superior en este contexto.
 
 ## Exámenes
 
@@ -70,6 +71,11 @@
 
 - Live and work as a contributing, well-rounded member of society.
 - Tomado de ACM Special Interest Group for Information Technology Education, [SIGITE](http://www.sigite.org/?page_id=22)
+
+## Contenidos
+
+- Los contenidos concretos que aprendas no son tan importantes como las capacidades que desarrolles.
+- Oblígate a preguntar con frecuencia. Cualquier persona en el proceso de aprender tiene dudas.
 
 ## DevOps
 

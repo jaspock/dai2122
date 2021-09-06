@@ -19,23 +19,23 @@ Este es el calendario de cada uno de los entregables de la asignatura. No se adm
       - Porcentaje en la nota de prácticas
     * - Práctica #1
       - `Una página web con HTML5`_
-      - 8 octubre 2020
+      - 7 octubre 2021
       - 8 horas
       - 20%
     * - Práctica #2
       - `Una aplicación web local`_
-      - 29 octubre 2020
-      - 12 horas
+      - 4 noviembre 2021
+      - 14 horas
       - 25%
     * - Práctica #3
       - `Una aplicación con acceso a servicios web de terceros y con componentes web`_
-      - 26 noviembre 2020
+      - 25 noviembre 2021
       - 12 horas
       - 25%
     * - Práctica #4
       - `Una aplicación en la nube`_
-      - 23 diciembre 2020
-      - 18 horas
+      - 23 diciembre 2021
+      - 20 horas
       - 30%
 
 
