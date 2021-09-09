@@ -29,9 +29,10 @@ Novedades
     :header-rows: 0
     :class: tablita
 
-    * - 13 sep
+    * - 10 sep
+      - En la sección ":ref:`label-actividades`" podrás ir encontrando cada semana las actividades a realizar antes de la clase siguiente. Habrá también un enlace a un pequeño cuestionario que tienes que rellenar antes de las 23.59 del día anterior. Recuerda que estos cuestionarios contribuyen a la nota final. Consulta tras cada clase la sección ":ref:`label-actividades`" para comprobar si esa semana hay que realizar actividades antes de la clase siguiente. Ya tienes disponible las actividades y el cuestionario a realizar antes de la clase del 21 de septiembre de 2021.
+    * - 08 sep
       - Ya está publicado el enunciado de la primera práctica. Las clases de teoría y prácticas comienzan el día 14 de septiembre.
-
 
 ..    * - 11 Ene
 ..      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 4. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros. El apartado opcional de autenticación supone un máximo de 2 puntos de la nota final de la práctica. Escribe al profesor para cualquier aclaración sobre tu nota. *Nota:* no dejes de leer el anuncio del día 8 de enero que aparece más abajo ya que contiene información muy importante sobre los exámenes de enero de la asignatura.
