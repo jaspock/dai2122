@@ -152,15 +152,16 @@ Aunque hoy día la mayor parte de los sistemas operativos trabajan con la codifi
 .. admonition:: Hazlo tú ahora
   :class: hazlotu
 
-  Observa que indicar una determinada codificación en el atributo ``charset`` del elemento ``meta`` no garantiza que los caracteres del documento usen realmente dicha codificación. Usa un editor de textos que permita redactar documentos bajo diferentes codificaciones y graba tu documento HTML usando las codificaciones *UTF-8* e *ISO-8859-15* (Latin-1); prueba a poner el valor correcto y el incorrecto en la directiva ``meta`` y observa el resultado con los caracteres especiales al abrir el documento en el navegador. Estudia cómo se representan a nivel de bytes los caracteres en las distintas codificaciones con editores hexadecimales como `HexEd.it`_.
+  Observa que indicar una determinada codificación en el atributo ``charset`` del elemento ``meta`` no garantiza que los caracteres del documento usen realmente dicha codificación. Usa un editor de textos que permita redactar documentos bajo diferentes codificaciones y graba tu documento HTML usando las codificaciones *UTF-8* e *ISO-8859-15* (Latin-1); prueba a poner el valor correcto y el incorrecto en la directiva ``meta`` y observa el resultado con los caracteres especiales al abrir el documento en el navegador. Estudia cómo se representan a nivel de bytes los caracteres en las distintas codificaciones con editores hexadecimales como `HexEd.it`_ o el `incorporado`_ en Visual Studio Code.
 
   .. _`HexEd.it`: https://hexed.it/
+  .. _`incorporado`: https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor
 
 
 Alojamiento en un servidor
 --------------------------
 
-Una página web normalmente se aloja en un servidor web. Si la máquina en la que lo hacemos fuera pública (nuestro ordenador personal normalmente no lo será), se podría acceder entonces al documento desde cualquier máquina conectada a internet usando convenientemente la URL del servidor. Existen muchos servidores web diferentes; algunos de los más conocidos son Apache HTTP Server (HTTPD), Internet Information Services, Apache Tomcat o Jetty. Mientras un programador desarrolla una aplicación web es habitual que lance un servidor en su máquina para ir probando sus cambios; en ese caso, el URL de acceso al servidor suele tener la forma ``http://localhost:8080`` donde ``localhost`` es el nombre de la propia máquina como *host* (IP 127.0.0.1) y ``8080`` es un puerto libre que es necesario indicar en el URL, ya que de no hacerlo el protocolo HTTP usa por defecto el puerto 80 (y HTTPS el 443), que estará normalmente reservado para comunicarse mediante HTTP con otros ordenadores. 
+Una página web normalmente se aloja en un servidor web. Si la máquina en la que lo hacemos fuera pública (nuestro ordenador personal normalmente no lo será), se podría acceder entonces al documento desde cualquier máquina conectada a internet usando convenientemente la URL del servidor. Existen muchos servidores web diferentes; algunos de los más conocidos son Apache HTTP Server (HTTPD), nginx, LiteSpeed, Internet Information Services, Apache Tomcat o Jetty. Mientras un programador desarrolla una aplicación web es habitual que lance un servidor en su máquina para ir probando sus cambios; en ese caso, el URL de acceso al servidor suele tener la forma ``http://localhost:8080`` donde ``localhost`` es el nombre de la propia máquina como *host* (IP 127.0.0.1) y ``8080`` es un puerto libre que es necesario indicar en el URL, ya que de no hacerlo el protocolo HTTP usa por defecto el puerto 80 (y HTTPS el 443), que estará normalmente reservado para comunicarse mediante HTTP con otros ordenadores. 
 
 .. admonition:: Hazlo tú ahora
   :class: hazlotu
@@ -170,6 +171,12 @@ Una página web normalmente se aloja en un servidor web. Si la máquina en la qu
   .. code-block::
 
     python -m SimpleHTTPServer
+
+o con versiones más recientes de Python:
+
+  .. code-block::
+
+    python -m http.server
 
 
 Validación de documentos HTML
