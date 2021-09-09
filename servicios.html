@@ -662,9 +662,9 @@
 <span class="c1">// datos:</span>
 <span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mf">4</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// Código de estado de HTTP:</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">!=</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Hubo un error (&quot;</span> <span class="o">+</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">+</span> <span class="s2">&quot;)!&quot;</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="k">else</span> <span class="p">{</span>
@@ -680,7 +680,7 @@
       <span class="c1">// &quot;description&quot;: &quot;Spirited Away is an Oscar winning Japanese animated film about</span>
       <span class="c1">// a ten year old girl who wanders away from her parents...&quot;, &quot;director&quot;: &quot;Hayao</span>
       <span class="c1">// Miyazaki&quot;, ...},  {...},  {...} ]</span>
-      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">resultado</span><span class="p">.</span><span class="nx">textContent</span><span class="o">+=</span> <span class="nx">r</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="o">+</span><span class="s2">&quot;; &quot;</span><span class="p">;</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -694,7 +694,7 @@
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Las principales diferencias entre el formato JSON y la notación literal de objetos en Javascript son que en el primer caso los atributos van siempre entrecomillados, no pueden usarse comillas simples, no pueden incluirse valores de algunos tipos especiales de JavaScript como, por ejemplo, funciones, y, finalmente, no puede haber una coma tras el último atributo. Este última característica sí que es correcta en JavaScript. Por ejemplo, la siguiente definición de un objeto es correcta en JavaScript, pero la parte de la derecha de la asignación no lo sería en JSON por múltiples motivos:</p>
-<div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="o">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">:</span> <span class="mi">16</span><span class="p">,</span> <span class="p">};</span>
+<div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="mf">12</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="o">:</span> <span class="mf">14</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">:</span> <span class="mf">16</span><span class="p">,</span> <span class="p">};</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -733,7 +733,7 @@
   <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">responseAsObject</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">responseAsObject</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">responseAsObject</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">resultado</span><span class="p">.</span><span class="nx">textContent</span><span class="o">+=</span> <span class="nx">responseAsObject</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="o">+</span><span class="s2">&quot;; &quot;</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">})</span>
@@ -782,8 +782,8 @@
 32
 33</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">minusculas</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">promise</span><span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="o">&gt;</span><span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">r</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="o">=</span> <span class="nx">r</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
       <span class="p">}</span>
       <span class="nx">resolve</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span>
@@ -806,7 +806,7 @@
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">minusculas</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">responseAsObject</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">responseAsObject</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">responseAsObject</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">resultado</span><span class="p">.</span><span class="nx">textContent</span><span class="o">+=</span> <span class="nx">responseAsObject</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="o">+</span><span class="s2">&quot;; &quot;</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">})</span>
