@@ -172,11 +172,11 @@ Una página web normalmente se aloja en un servidor web. Si la máquina en la qu
 
     python -m SimpleHTTPServer
 
-o con versiones más recientes de Python:
+  o con versiones más recientes de Python:
 
-  .. code-block::
+    .. code-block::
 
-    python -m http.server
+      python -m http.server
 
 
 Validación de documentos HTML
