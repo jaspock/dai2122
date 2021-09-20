@@ -1499,15 +1499,15 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">outer</span><span class="p">(</span><span class="nx">z</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">z</span><span class="p">;</span>
   <span class="kd">function</span> <span class="nx">inner</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">20</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="nx">b</span><span class="o">+=</span> <span class="mf">10</span><span class="p">;</span>
+  <span class="nx">b</span><span class="o">+=</span> <span class="mi">10</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">inner</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="nx">outer</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">Y</span> <span class="o">=</span> <span class="nx">outer</span><span class="p">(</span><span class="mf">20</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="nx">outer</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">Y</span> <span class="o">=</span> <span class="nx">outer</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
 <span class="nx">X</span><span class="p">();</span>
 <span class="nx">Y</span><span class="p">();</span>
 <span class="nx">X</span><span class="p">();</span>
@@ -1524,9 +1524,9 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 5
 6
 7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">count</span><span class="o">=</span><span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">count</span><span class="o">=</span><span class="mf">0</span><span class="p">,</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">count</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
   <span class="k">while</span> <span class="p">(</span><span class="nx">i</span><span class="o">&lt;</span><span class="k">this</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">count</span><span class="o">+=</span> <span class="err">@</span><span class="mf">1</span><span class="p">;</span>
+    <span class="nx">count</span><span class="o">+=</span> <span class="err">@</span><span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="nx">count</span><span class="p">;</span>
 <span class="p">};</span>
@@ -1545,7 +1545,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">logger</span><span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">100</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -1564,10 +1564,10 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 7
 8
 9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">isSorted</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="err">@</span><span class="mf">1</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">l</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="err">@</span><span class="mf">2</span><span class="p">;</span>
-    <span class="kr">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="err">@</span><span class="mf">3</span><span class="p">;</span>
+  <span class="kr">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="err">@</span><span class="mi">1</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">l</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="err">@</span><span class="mi">2</span><span class="p">;</span>
+    <span class="kr">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="err">@</span><span class="mi">3</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">c</span> <span class="o">&gt;</span> <span class="nx">n</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="p">}</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
@@ -1582,9 +1582,9 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 2
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mf">40</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">40</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">answer</span><span class="p">);</span>
-<span class="p">})</span><span class="err">@</span><span class="mf">1</span><span class="p">;</span>
+<span class="p">})</span><span class="err">@</span><span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -1609,13 +1609,13 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 
 <span class="kd">function</span> <span class="nx">increment</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">callBack</span><span class="p">){</span>
   <span class="kd">var</span> <span class="nx">f</span><span class="o">=</span> <span class="nx">callBack</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">num</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">num</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="nx">callBack</span><span class="p">();</span>
 <span class="p">}</span>
 
-<span class="nx">increment</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="nx">done</span><span class="p">);</span>
+<span class="nx">increment</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nx">done</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -1637,20 +1637,20 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 13
 14
 15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">f</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;f&quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">x</span><span class="o">||</span><span class="mf">0</span><span class="p">));</span>
+  <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;f&quot;</span><span class="o">+</span><span class="p">(</span><span class="nx">x</span><span class="o">||</span><span class="mi">0</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">g</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;g1&quot;</span><span class="p">);</span>
-  <span class="nx">f</span><span class="p">(</span><span class="mf">3</span><span class="p">);</span>
-  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mf">5000</span><span class="p">);</span>
+  <span class="nx">f</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mi">5000</span><span class="p">);</span>
   <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;g2&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="nx">f</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mf">6000</span><span class="p">);</span>
+<span class="nx">f</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mi">6000</span><span class="p">);</span>
 <span class="nx">g</span><span class="p">();</span>
-<span class="nx">f</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+<span class="nx">f</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
 <p>Para resolver este tipo de problemas te puede ayudar representar un cronograma similar al siguiente donde vayas registrando el código que se está ejecutando en cada momento, así como el código asíncrono que terminará encolando una función de <em>callback</em>:</p>
@@ -1720,8 +1720,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;p.last&#39;</span><span class="p">).</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">children</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">id</span><span class="o">=</span> <span class="s1">&#39;ch1&#39;</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">e</span><span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">];</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;p.last&#39;</span><span class="p">).</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">children</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">id</span><span class="o">=</span> <span class="s1">&#39;ch1&#39;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">e</span><span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span>
 <span class="nx">e</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">&#39;first&#39;</span><span class="p">);</span>
 <span class="nx">e</span><span class="p">.</span><span class="nx">previousSibling</span><span class="p">.</span><span class="nx">previousSibling</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">&#39;first&#39;</span><span class="p">);</span>
 </pre></div>
@@ -1774,8 +1774,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 4
 5
 6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">l</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;aside &gt; nav li&quot;</span><span class="p">);</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">l</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">).</span><span class="nx">length</span><span class="o">===</span><span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">l</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">).</span><span class="nx">length</span><span class="o">===</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -1792,8 +1792,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">f</span><span class="p">(</span><span class="nx">g</span><span class="p">,</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="o">:</span><span class="nx">g</span><span class="p">(</span><span class="nx">x</span><span class="p">)}</span>
 <span class="p">}</span>
-<span class="kd">var</span> <span class="nx">h</span><span class="o">=</span> <span class="nx">f</span><span class="p">(</span><span class="nx">x</span><span class="p">=&gt;</span><span class="mf">3</span><span class="o">*</span><span class="nx">x</span><span class="p">,</span><span class="mf">4</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">b</span><span class="o">-</span><span class="nx">h</span><span class="p">.</span><span class="nx">a</span><span class="p">(</span><span class="mf">2</span><span class="p">));</span>
+<span class="kd">var</span> <span class="nx">h</span><span class="o">=</span> <span class="nx">f</span><span class="p">(</span><span class="nx">x</span><span class="p">=&gt;</span><span class="mi">3</span><span class="o">*</span><span class="nx">x</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">b</span><span class="o">-</span><span class="nx">h</span><span class="p">.</span><span class="nx">a</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -1806,8 +1806,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 4
 5
 6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">every</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">predicate</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">array</span><span class="p">.</span><span class="err">@</span><span class="mf">1</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="err">@</span><span class="mf">2</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">array</span><span class="p">.</span><span class="err">@</span><span class="mi">1</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="err">@</span><span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1815,8 +1815,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 </td></tr></table></div>
 <p>Lo siguiente son un par de ejemplos de llamadas a la función; la primera devuelve cierto y la segunda devuelve falso:</p>
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">every</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span> <span class="nx">n</span> <span class="p">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mf">10</span><span class="p">));</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">every</span><span class="p">([</span><span class="mf">2</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">16</span><span class="p">],</span> <span class="nx">n</span> <span class="p">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mf">10</span><span class="p">));</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">every</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="nx">n</span> <span class="p">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">every</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">16</span><span class="p">],</span> <span class="nx">n</span> <span class="p">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">));</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -1840,12 +1840,12 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 <span class="p">}</span>
 
 <span class="nx">Cilindro</span><span class="p">.</span><span class="err">@</span><span class="mf">2.</span><span class="nx">volumen</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">diametro</span> <span class="o">/</span> <span class="mf">2</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">diametro</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
   <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">altura</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="nx">r</span> <span class="o">*</span> <span class="nx">r</span><span class="p">;</span>
 <span class="p">};</span>
 
-<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="err">@</span><span class="mf">3</span> <span class="nx">Cilindro</span><span class="p">(</span><span class="mf">7</span><span class="p">,</span> <span class="mf">4</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">volumen</span><span class="p">().</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">4</span><span class="p">));</span>  <span class="c1">// imprime 87.9646</span>
+<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="err">@</span><span class="mi">3</span> <span class="nx">Cilindro</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">volumen</span><span class="p">().</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">4</span><span class="p">));</span>  <span class="c1">// imprime 87.9646</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -1879,23 +1879,23 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
     <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;f&quot;</span><span class="o">+</span><span class="nx">x</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">setTimeout</span><span class="p">(</span> <span class="p">()=&gt;</span><span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span> <span class="p">,</span><span class="mf">1000</span><span class="p">)</span>
+    <span class="nx">setTimeout</span><span class="p">(</span> <span class="p">()=&gt;</span><span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span> <span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">g</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">f</span><span class="p">();</span>
-  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mf">1000</span><span class="p">);</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
   <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;g1&quot;</span><span class="p">);</span>
-  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mf">1000</span><span class="p">);</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
   <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;g2&quot;</span><span class="p">);</span>
-  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mf">3</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;g3&quot;</span><span class="p">);</span>
   <span class="p">}</span>
 
 <span class="p">}</span>
 
-<span class="nx">f</span><span class="p">(</span><span class="mf">7</span><span class="p">);</span>
+<span class="nx">f</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
 <span class="nx">g</span><span class="p">();</span>
 </pre></div>
 </td></tr></table></div>
@@ -1955,8 +1955,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 4
 5
 6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">e</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
-<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">e</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">length</span><span class="o">===</span><span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">e</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">length</span><span class="o">===</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -2019,7 +2019,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 </td></tr></table></div>
 <p>Indica con qué sustituir la marca <code class="docutils literal notranslate"><span class="pre">&#64;1</span></code> en el siguiente código en JavaScript para que el <em>primer</em> elemento de tipo <code class="docutils literal notranslate"><span class="pre">span</span></code> que tiene como contenido la cadena <em>Bruinen</em> (hay tres en total) pase a tener un atributo <code class="docutils literal notranslate"><span class="pre">spellcheck</span></code> con valor <code class="docutils literal notranslate"><span class="pre">false</span></code>. Asume que cualquier valor asignado a un atributo <code class="docutils literal notranslate"><span class="pre">class</span></code> puede estar asignado a otro atributo <code class="docutils literal notranslate"><span class="pre">class</span></code> en otras partes no mostradas del documento HTML y que cualquiera de los elementos HTML pueden estar siendo usados en otras partes del documento. Si hay más de una posibilidad para sustituir una determinada marca, pon la que menos caracteres ocupe.</p>
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">element</span><span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="err">@</span><span class="mf">1</span><span class="p">);</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">element</span><span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="err">@</span><span class="mi">1</span><span class="p">);</span>
 <span class="nx">element</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;spellcheck&quot;</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
@@ -2038,10 +2038,10 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 <div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">c</span><span class="o">=</span> <span class="p">{</span><span class="nx">gamma</span><span class="o">:</span><span class="mf">2</span><span class="p">};</span>
-<span class="kd">let</span> <span class="nx">h1</span><span class="o">=</span> <span class="nx">x</span> <span class="o">=</span><span class="err">@</span><span class="mf">1</span> <span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">h2</span><span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="o">=</span><span class="err">@</span><span class="mf">2</span> <span class="nx">h1</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="o">*</span><span class="nx">c</span><span class="p">.</span><span class="err">@</span><span class="mf">3</span><span class="o">-</span><span class="nx">h1</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h2</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="err">@</span><span class="mf">4</span><span class="p">));</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">c</span><span class="o">=</span> <span class="p">{</span><span class="nx">gamma</span><span class="o">:</span><span class="mi">2</span><span class="p">};</span>
+<span class="kd">let</span> <span class="nx">h1</span><span class="o">=</span> <span class="nx">x</span> <span class="o">=</span><span class="err">@</span><span class="mi">1</span> <span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">h2</span><span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="o">=</span><span class="err">@</span><span class="mi">2</span> <span class="nx">h1</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="o">*</span><span class="nx">c</span><span class="p">.</span><span class="err">@</span><span class="mi">3</span><span class="o">-</span><span class="nx">h1</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h2</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">4</span><span class="p">));</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -2060,14 +2060,14 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 10
 11
 12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">lista</span><span class="o">=</span><span class="err">@</span><span class="mf">1</span>
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">lista</span><span class="o">=</span><span class="err">@</span><span class="mi">1</span>
 
-<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lista</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">==</span><span class="mf">2</span> <span class="o">||</span> <span class="nx">i</span><span class="o">==</span><span class="mf">3</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">emit</span><span class="p">(</span><span class="nx">lista</span><span class="p">[</span><span class="nx">i</span><span class="p">])},</span> <span class="mf">2000</span><span class="p">);</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lista</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">==</span><span class="mi">2</span> <span class="o">||</span> <span class="nx">i</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">emit</span><span class="p">(</span><span class="nx">lista</span><span class="p">[</span><span class="nx">i</span><span class="p">])},</span> <span class="mi">2000</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">==</span><span class="mf">4</span> <span class="o">||</span> <span class="nx">i</span><span class="o">==</span><span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">emit</span><span class="p">(</span><span class="nx">lista</span><span class="p">[</span><span class="nx">i</span><span class="p">])},</span> <span class="mf">1000</span><span class="p">);</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">==</span><span class="mi">4</span> <span class="o">||</span> <span class="nx">i</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">emit</span><span class="p">(</span><span class="nx">lista</span><span class="p">[</span><span class="nx">i</span><span class="p">])},</span> <span class="mi">1000</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">else</span> <span class="p">{</span>
     <span class="nx">emit</span><span class="p">(</span><span class="nx">lista</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
@@ -2090,14 +2090,14 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
  8
  9
 10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
-  <span class="err">@</span><span class="mf">1</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">@</span><span class="mi">1</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="s1">&#39;Esta persona se llama &#39;</span><span class="o">+</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="err">@</span><span class="mf">2</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-    <span class="err">@</span><span class="mf">3</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="err">@</span><span class="mi">2</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="err">@</span><span class="mi">3</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
-<span class="kr">const</span> <span class="nx">jane</span> <span class="o">=</span> <span class="err">@</span><span class="mf">4</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">&#39;Jane&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">jane</span> <span class="o">=</span> <span class="err">@</span><span class="mi">4</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">&#39;Jane&#39;</span><span class="p">);</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">jane</span><span class="p">.</span><span class="nx">describe</span><span class="p">());</span>
 </pre></div>
 </td></tr></table></div>
@@ -2137,7 +2137,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
   <span class="nx">desplaza</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;shhhh&quot;</span><span class="p">)}</span>
 <span class="p">};</span>
 <span class="kd">function</span> <span class="nx">Bolinche</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span> <span class="o">-</span><span class="mf">1</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nx">Bolinche</span><span class="p">.</span><span class="nx">prototype</span><span class="o">=</span> <span class="nx">protoBichoBola</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">bicho</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Bolinche</span><span class="p">();</span>
@@ -2165,18 +2165,18 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 11
 12
 13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">f1</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">a</span><span class="o">=</span> <span class="err">@</span><span class="mf">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">a</span><span class="o">=</span> <span class="err">@</span><span class="mi">1</span><span class="p">;</span>
   <span class="kd">function</span> <span class="nx">f2</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">let</span> <span class="nx">k</span><span class="o">=</span> <span class="nx">n</span><span class="o">*</span><span class="nx">a</span><span class="o">*</span><span class="nx">i</span><span class="p">;</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">k</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="nx">f2</span><span class="p">(</span><span class="err">@</span><span class="mf">2</span><span class="p">);</span>
-  <span class="nx">a</span><span class="o">=</span> <span class="mf">7</span><span class="p">;</span>
+  <span class="nx">f2</span><span class="p">(</span><span class="err">@</span><span class="mi">2</span><span class="p">);</span>
+  <span class="nx">a</span><span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">f2</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">f1</span><span class="p">(</span><span class="mf">3</span><span class="p">);</span>
-<span class="nx">f</span><span class="p">(</span><span class="err">@</span><span class="mf">2</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">f1</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="nx">f</span><span class="p">(</span><span class="err">@</span><span class="mi">2</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -2198,12 +2198,12 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 10
 11
 12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">p1</span><span class="p">()</span>
-<span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="p">);</span> <span class="k">return</span> <span class="nx">p2</span><span class="p">(</span><span class="nx">x</span><span class="o">+</span><span class="mf">1</span><span class="p">,</span><span class="nx">x</span><span class="o">+</span><span class="mf">2</span><span class="p">,</span><span class="nx">x</span><span class="o">+</span><span class="mf">3</span><span class="p">);</span> <span class="p">}</span> <span class="p">)</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="p">);</span> <span class="k">return</span> <span class="nx">p2</span><span class="p">(</span><span class="nx">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nx">x</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span><span class="nx">x</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span> <span class="p">}</span> <span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">+</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="p">);</span> <span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">++</span><span class="p">;</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span> <span class="p">}</span> <span class="p">)</span>
 <span class="p">.</span><span class="k">catch</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">*</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="p">)</span> <span class="p">);</span>
 
 <span class="kd">function</span> <span class="nx">p1</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span> <span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span> <span class="p">);</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span> <span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">p2</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
@@ -2229,15 +2229,15 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 12
 13
 14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span> <span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mf">0</span><span class="p">,</span><span class="nx">b</span><span class="o">:</span><span class="mf">2</span><span class="p">}</span> <span class="p">)</span> <span class="p">)</span>
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span> <span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span><span class="nx">b</span><span class="o">:</span><span class="mi">2</span><span class="p">}</span> <span class="p">)</span> <span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span> <span class="p">(</span>
     <span class="kd">function</span> <span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">+</span><span class="mf">5</span><span class="o">===</span><span class="err">@</span><span class="mf">1</span> <span class="o">&amp;&amp;</span> <span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">*</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">*</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">===</span><span class="err">@</span><span class="mf">2</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">resolve</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">+</span><span class="mf">5</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">+</span><span class="mi">5</span><span class="o">===</span><span class="err">@</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">*</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">*</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">===</span><span class="err">@</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">resolve</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">a</span><span class="o">+</span><span class="mi">5</span><span class="p">);</span>
       <span class="p">}</span>
       <span class="k">else</span> <span class="p">{</span>
-        <span class="nx">reject</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">+</span><span class="mf">2</span><span class="p">);</span>
+        <span class="nx">reject</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">b</span><span class="o">+</span><span class="mi">2</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">)</span>
@@ -2265,16 +2265,16 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 13
 14
 15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span> <span class="mf">1000</span><span class="p">);</span>
+  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1000</span><span class="p">);</span>
 <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
   <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="c1">// (*)</span>
-    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span> <span class="o">*</span> <span class="mf">2</span><span class="p">),</span> <span class="mf">1000</span><span class="p">);</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span> <span class="o">*</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">1000</span><span class="p">);</span>
   <span class="p">});</span>
 <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// (**)</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
   <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span> <span class="o">*</span> <span class="mf">2</span><span class="p">),</span> <span class="mf">1000</span><span class="p">);</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span> <span class="o">*</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">1000</span><span class="p">);</span>
   <span class="p">});</span>
 <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
@@ -2316,11 +2316,11 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 11
 12
 13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">async</span> <span class="kd">function</span> <span class="nx">movie</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">g</span><span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
-  <span class="nx">g</span><span class="o">+=</span> <span class="err">@</span><span class="mf">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">g</span><span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="nx">g</span><span class="o">+=</span> <span class="err">@</span><span class="mi">1</span><span class="p">;</span>
   <span class="k">try</span> <span class="p">{</span>
     <span class="kd">let</span> <span class="nx">r</span><span class="o">=</span> <span class="nx">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;http://example.com/movies.json/3400231&#39;</span><span class="p">);</span>
-    <span class="kd">let</span> <span class="nx">x</span><span class="o">=</span> <span class="err">@</span><span class="mf">2</span> <span class="nx">r</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+    <span class="kd">let</span> <span class="nx">x</span><span class="o">=</span> <span class="err">@</span><span class="mi">2</span> <span class="nx">r</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">year</span> <span class="o">+</span> <span class="nx">g</span><span class="p">);</span>
   <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
@@ -2375,11 +2375,11 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 4
 5
 6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">delay</span><span class="p">(</span><span class="nx">ms</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">resolve</span> <span class="p">=&gt;</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="err">@</span><span class="mf">1</span><span class="p">,</span><span class="err">@</span><span class="mf">2</span><span class="p">));</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="nx">resolve</span> <span class="p">=&gt;</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="c1">// ejemplo de uso:</span>
-<span class="nx">delay</span><span class="p">(</span><span class="mf">3000</span><span class="p">).</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;esto se imprime tras 3 segundos&#39;</span><span class="p">));</span>
+<span class="nx">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">).</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;esto se imprime tras 3 segundos&#39;</span><span class="p">));</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -2387,7 +2387,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 <p class="admonition-title"><span class="problema-contador-servicios">Problema</span></p>
 <p>Sabiendo que no hay ningún error en el siguiente código y que la llamada al URL indicado en <code class="docutils literal notranslate"><span class="pre">fetch</span></code> devuelve en el cuerpo de la respuesta el dato válido en JSON <code class="docutils literal notranslate"><span class="pre">{&quot;title&quot;:&quot;天気の子&quot;,&quot;director&quot;:&quot;新海誠&quot;,&quot;year&quot;:2019}</span></code>, indica la salida que emite por consola el siguiente bloque de JavaScript:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">movie</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">g</span><span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">g</span><span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;http://example.com/movies.json/3400231&#39;</span><span class="p">).</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="nx">r</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="nx">g</span><span class="o">++</span><span class="p">;</span>
@@ -2591,8 +2591,8 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
     <span class="p">}</span>
 
     <span class="nx">connectedCallback</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">s</span><span class="o">=</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">hasAttribute</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span><span class="o">?</span><span class="s2">&quot;&quot;</span><span class="o">:</span><span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="err">@</span><span class="mf">2</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">shadowRoot</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#cadena&#39;</span><span class="p">).</span><span class="nx">textContent</span><span class="o">=</span> <span class="nx">reverse</span><span class="p">(</span><span class="err">@</span><span class="mf">3</span><span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">s</span><span class="o">=</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">hasAttribute</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span><span class="o">?</span><span class="s2">&quot;&quot;</span><span class="o">:</span><span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="err">@</span><span class="mi">2</span><span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">shadowRoot</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#cadena&#39;</span><span class="p">).</span><span class="nx">textContent</span><span class="o">=</span> <span class="nx">reverse</span><span class="p">(</span><span class="err">@</span><span class="mi">3</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
@@ -2768,7 +2768,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="p">(</span><span class="nx">request</span><span class="p">,</span><span class="nx">response</span><span class="p">,</span><span class="nx">foo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;@1&#39;</span><span class="p">)</span>
-  <span class="err">@</span><span class="mf">2</span><span class="p">;</span>
+  <span class="err">@</span><span class="mi">2</span><span class="p">;</span>
 <span class="p">});</span>
 </pre></div>
 </td></tr></table></div>
@@ -2846,10 +2846,10 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 <span class="p">});</span>
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/@1&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="err">@</span><span class="mf">2</span><span class="o">*</span><span class="mf">2</span><span class="p">});</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span><span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="err">@</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">});</span>
 <span class="p">});</span>
 
-<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mf">3000</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;server started&#39;</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;server started&#39;</span><span class="p">));</span>
 </pre></div>
 </td></tr></table></div>
 <p>El documento <code class="docutils literal notranslate"><span class="pre">index.html</span></code> que se sirve al cliente desde el código anterior es:</p>
@@ -2877,7 +2877,7 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
     <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
       <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;/@3&#39;</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">r</span> <span class="p">=&gt;</span> <span class="nx">r</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">x</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">@</span><span class="mf">4</span><span class="p">))</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">x</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">@</span><span class="mi">4</span><span class="p">))</span>
       <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>
     <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -2904,16 +2904,16 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 13
 14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
   <span class="nx">async</span> <span class="kd">function</span> <span class="nx">load</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">response</span> <span class="o">=</span> <span class="err">@</span><span class="mf">1</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">response</span> <span class="o">=</span> <span class="err">@</span><span class="mi">1</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}</span>
     <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
   <span class="p">}</span>
 
-  <span class="p">(</span><span class="err">@</span><span class="mf">2</span> <span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">let</span> <span class="nx">x</span><span class="o">=</span> <span class="err">@</span><span class="mf">3</span> <span class="nx">load</span><span class="p">(</span><span class="s1">&#39;https://array.org/5/&#39;</span><span class="p">);</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">x</span><span class="p">[</span><span class="err">@</span><span class="mf">4</span><span class="p">]));</span>
+  <span class="p">(</span><span class="err">@</span><span class="mi">2</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">let</span> <span class="nx">x</span><span class="o">=</span> <span class="err">@</span><span class="mi">3</span> <span class="nx">load</span><span class="p">(</span><span class="s1">&#39;https://array.org/5/&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">x</span><span class="p">[</span><span class="err">@</span><span class="mi">4</span><span class="p">]));</span>
   <span class="p">})();</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
@@ -2932,11 +2932,11 @@ que está en tu varita dio otra pluma,<span class="p">&lt;/</span><span class="n
 7
 8
 9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">async</span> <span class="kd">function</span> <span class="nx">w</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="mf">10</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">10</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">f</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">w</span><span class="p">()</span> <span class="err">@</span><span class="mf">1</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
+  <span class="nx">w</span><span class="p">()</span> <span class="err">@</span><span class="mi">1</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nx">f</span><span class="p">();</span>

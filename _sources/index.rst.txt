@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 21 sep
+      - Recuerda mirar cada semana la sección ":ref:`label-actividades`" para ver las tareas a realizar antes de la clase de la semana siguiente.
     * - 10 sep
       - En la sección ":ref:`label-actividades`" podrás ir encontrando cada semana las actividades a realizar antes de la clase siguiente. Habrá también un enlace a un pequeño cuestionario que tienes que rellenar antes de las 23.59 del día anterior. Recuerda que estos cuestionarios contribuyen a la nota final. Consulta tras cada clase la sección ":ref:`label-actividades`" para comprobar si esa semana hay que realizar actividades antes de la clase siguiente. Ya tienes disponible las actividades y el cuestionario a realizar antes de la clase del 21 de septiembre de 2021.
     * - 08 sep
@@ -63,8 +65,8 @@ Actividades previas a las clases
 .. - Antes de la clase del 26/10/2021: estudia los vídeos de la actividad ":ref:`label-api-web-js`" (duración total de los vídeos: unos 55 minutos; unos 40 a 1,5x). A continuación, contesta el `test sobre la API de los navegadores para JavaScript`_ (plazo límite: 25/10/2021, 23:59 horas).
 .. - Antes de la clase del 19/10/2021: estudia el código y los vídeos de la actividad ":ref:`label-app-web-sencilla`" (duración total de los vídeos: unos 50 minutos; unos 35 a 1,5x). A continuación, contesta el `test sobre la aplicación web sencilla con JavaScript`_ (plazo límite: 18/10/2021, 23:59 horas).
 .. - Antes de la clase del 05/10/2021: estudia los vídeos de la actividad ":ref:`label-intro-js`" (duración total de los vídeos: unos 55 minutos; unos 40 a 1,5x). A continuación, contesta el `test sobre la introducción a JavaScript`_ (plazo límite: 04/10/2021, 23:59 horas). Utiliza tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
-.. - Antes de la clase del 28/09/2021: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-inline-css`", ":ref:`label-caja-css`" y ":ref:`label-posicionamiento-css`". A continuación, contesta el `test sobre el modelo de caja de CSS`_ (plazo límite: 27/09/2021, 23:59 horas). Recuerda utilizar tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
 
+- Antes de la clase del 28/09/2021: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-inline-css`", ":ref:`label-caja-css`" y ":ref:`label-posicionamiento-css`". A continuación, contesta el `test sobre el modelo de caja de CSS`_ (plazo límite: 27/09/2021, 23:59 horas). Recuerda utilizar tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales.
 - Antes de la clase del 21/09/2021: estudia los vídeos y practica con la actividad ":ref:`label-intro-css`" (duración total de los vídeos: unos 35 minutos; unos 25 a velocidad 1,5x). A continuación, contesta el `test sobre la introducción a CSS`_ (plazo límite: 20/09/2021, 23:59 horas). Utiliza tu cuenta de ``gcloud.ua.es`` para acceder a todos estos materiales. Si tu ancho de banda te lo permite, puedes elegir explícitamente una resolución de 1080 píxeles.
 
 .. _`test sobre computación en la nube`: https://forms.gle/WUqR6Z3AaHKrqZ9J7
