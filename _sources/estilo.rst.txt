@@ -167,7 +167,7 @@ Observa el resultado mostrado por el navegador para el siguiente bloque de códi
 
   <div>
     <span>inline naranja</span><span>inline azul</span>
-    <span>inline lila</span>
+    <span>inline lavanda</span>
     <div>bloque naranja</div>
     <div>bloque azul</div>
   </div>
@@ -289,9 +289,9 @@ La visualización del código anterior por el navegador es la siguiente:
 
 .. raw:: html
   
-  <div id="estatico">
+  <div id="estatico1">
     <script>
-      var root = document.querySelector('#estatico').attachShadow({mode:'open'});
+      var root = document.querySelector('#estatico1').attachShadow({mode:'open'});
       root.innerHTML = `
       <style>
         .cuadrados {
@@ -696,7 +696,7 @@ Finalmente, observa cómo con el uso adecuado del posicionamiento relativo podem
 Posicionamiento absoluto
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Si el posicionamiento ``relative`` que acabamos de ver permite colocar un elemento de forma relativa a su posición por defecto, el posicionamiento ``absolute`` permite colocarlo de forma relativa al elemento padre (más abajo matizaremos esto). En este caso, no *deja hueco*, porque nunca llega a tener una posición original propia. Además, de nuevo podemos usar las propiedades ``top``, ``bottom``, ``left`` y ``right`` para moverlo. Por poner un ejemplo, extensible a las otras tres propiedades, el valor de ``left`` es la distancia del borde izquierdo de la caja contenedora al borde izquierdo de la caja que resultará para el nuevo elemento. Un elemento con posicionamiento relativo no influye en otros elementos ni otros elementos influyen en él.
+Si el posicionamiento ``relative`` que acabamos de ver permite colocar un elemento de forma relativa a su posición por defecto, el posicionamiento ``absolute`` permite colocarlo de forma relativa al elemento padre (más abajo matizaremos esto). En este caso, no *deja hueco*, porque nunca llega a tener una posición original propia. Además, de nuevo podemos usar las propiedades ``top``, ``bottom``, ``left`` y ``right`` para moverlo. Por poner un ejemplo, extensible a las otras tres propiedades, el valor de ``left`` es la distancia del borde izquierdo de la caja contenedora al borde izquierdo de la caja que resultará para el nuevo elemento. Un elemento con posicionamiento absoluto no influye en otros elementos ni otros elementos influyen en él.
 
 .. code-block:: css
   :linenos:
@@ -766,7 +766,7 @@ Observa cómo además de añadir las propiedades ``position``, ``left`` y ``righ
 Posicionamiento fijo
 ~~~~~~~~~~~~~~~~~~~~
 
-Al igual que con el posicionamiento absoluto, en el posicionamiento ``fixed`` no se aplica el flujo normal para el elemento correspondiente y este no deja ningún hueco. Las diferencias con el posicionamiento fijo son:
+Al igual que con el posicionamiento absoluto, en el posicionamiento ``fixed`` no se aplica el flujo normal para el elemento correspondiente y este no deja ningún hueco. Las diferencias con el posicionamiento absoluto son:
 
 - Los desplazamientos son relativos a la ventana del documento.
 - La caja se mantiene en esa posición de la ventana aunque el usuario se desplace arriba o abajo (*scroll*) por el documento.
