@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/translations.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -153,7 +153,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li><span class="section-number">2. </span>Lenguajes de estilo</li>
+      <li>2. Lenguajes de estilo</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,7 +173,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="lenguajes-de-estilo">
-<h1><span class="section-number">2. </span>Lenguajes de estilo<a class="headerlink" href="#lenguajes-de-estilo" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1>2. Lenguajes de estilo<a class="headerlink" href="#lenguajes-de-estilo" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>El lenguaje HTML dota de contenido a una página web. El lenguaje JavaScript de interactividad. Y el lenguaje CSS (<em>cascading style sheets</em>), que vamos a estudiar en este tema, es el encargado de representar los aspectos relacionados con la presentación. Sin alterar el HTML de una página, solo modificando su hoja de estilo en CSS, pueden conseguirse <a class="reference external" href="http://csszengarden.com/">vistas completamente diferentes de un mismo documento</a>. El World Wide Web Consortium (W3C) ha ido definiendo varios niveles para CSS (que se corresponden, más o menos, con la idea de versiones) de forma que cada nivel extiende las funcionalidades del nivel anterior. Hasta CSS 2.1 (revisión 1 del nivel 2), la recomendación venía recogida en un único documento, pero a partir del nivel 3 se divide en varias <a class="reference external" href="https://www.w3.org/Style/CSS/">decenas de módulos</a>, cada uno de los cuales puede encontrarse en un estatus diferente (desde borrador a recomendación formal); además, el W3C ya trabaja en algunos módulos del nivel 4.</p>
 <div class="admonition important">
 <p class="admonition-title">Importante</p>
@@ -189,7 +189,7 @@
 </ul>
 </div>
 <div class="section" id="selectores-y-propiedades-del-lenguaje-css">
-<span id="label-intro-css"></span><h2><span class="section-number">2.1. </span>Selectores y propiedades del lenguaje CSS<a class="headerlink" href="#selectores-y-propiedades-del-lenguaje-css" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-intro-css"></span><h2>2.1. Selectores y propiedades del lenguaje CSS<a class="headerlink" href="#selectores-y-propiedades-del-lenguaje-css" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="hazlotu admonition">
 <p class="admonition-title">Hazlo tú ahora</p>
 <p>Estudia todos los vídeos de la serie «Selectores y propiedades de CSS» en los que se introducen los elementos principales del lenguaje CSS, especialmente los conceptos de propiedad y selector que se usan a la hora de definir la reglas de estilo: <a class="reference external" href="https://drive.google.com/file/d/1i3s-LKeMsCam5-kmD65G-BMGWsJjmaA8/view?usp=sharing">parte 1</a>, <a class="reference external" href="https://drive.google.com/file/d/1XpPhulZBzbsS-ODtjuwZUzDNznKVphj6/view?usp=sharing">parte 2</a> y <a class="reference external" href="https://drive.google.com/file/d/1PhItC2tHklcq82pHclsrt1sG5eD8PmNl/view?usp=sharing">parte 3</a>.</p>
@@ -217,7 +217,7 @@
 </div>
 </div>
 <div class="section" id="conexion-entre-los-estilos-y-el-documento-html">
-<h2><span class="section-number">2.2. </span>Conexión entre los estilos y el documento HTML<a class="headerlink" href="#conexion-entre-los-estilos-y-el-documento-html" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>2.2. Conexión entre los estilos y el documento HTML<a class="headerlink" href="#conexion-entre-los-estilos-y-el-documento-html" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>La forma más habitual (y normalmente la más correcta) de vincular los estilos a un documento HTML es mediante el elemento <code class="docutils literal notranslate"><span class="pre">&lt;link&gt;</span></code> empleado en la cabecera (<code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code>) del documento:</p>
 <div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -297,7 +297,7 @@
 </div>
 </div>
 <div class="section" id="elementos-en-linea-y-de-bloque">
-<span id="label-inline-css"></span><h2><span class="section-number">2.3. </span>Elementos en línea y de bloque<a class="headerlink" href="#elementos-en-linea-y-de-bloque" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-inline-css"></span><h2>2.3. Elementos en línea y de bloque<a class="headerlink" href="#elementos-en-linea-y-de-bloque" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>El motor de renderizado (<em>layout engine</em> o <em>rendering engine</em>) es un complejo componente de los navegadores que aplica los diferentes estilos definidos mediante CSS al contenido del documento HTML para mostrarlo en el dispositivo del usuario.  Cuando los motores de renderizado de los navegadores tienen que mostrar un elemento de un documento de HTML, determinan la ubicación, medidas y propiedades de una <em>caja rectangular de píxeles</em> que incluirá el contenido del elemento. La forma en la que se calculan estos parámetros de la caja depende del tipo de elemento.</p>
 <p>La mayoría de los elementos de HTML que pueden aparecer en el cuerpo (<code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code>) del documento caen en una de estas dos categorías: de bloque o en línea.</p>
 <p>En el caso de los elementos <em>de bloque</em> (<em>block elements</em>),</p>
@@ -369,7 +369,7 @@
 <p>Un elemento en línea puede aparecer dentro de un elemento en línea o de un elemento de tipo bloque. Un elemento de tipo bloque puede estar anidado dentro de otro elemento de tipo bloque; sin embargo, un elemento de tipo bloque no puede aparecer dentro de un elemento en línea.</p>
 </div>
 <div class="section" id="modelo-de-caja-en-css">
-<span id="label-caja-css"></span><h2><span class="section-number">2.4. </span>Modelo de caja en CSS<a class="headerlink" href="#modelo-de-caja-en-css" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-caja-css"></span><h2>2.4. Modelo de caja en CSS<a class="headerlink" href="#modelo-de-caja-en-css" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Todos los elementos de HTML se muestran en una caja <em>imaginaria</em> que se extiende alrededor de su contenido. Si bien el posicionamiento o el tamaño de estas cajas sigue reglas por defecto como las que hemos visto, muchas de estas propiedades geométricas pueden modificarse mediante reglas de CSS. Entender el modelo de caja de CSS es fundamental a la hora de dar estilo a una página web. Esto implica, entre otras cosas, entender bien la forma de definir los márgenes, el borde y el relleno (<em>padding</em>) de cada caja.</p>
 <div class="figure align-default" id="id1">
 <a class="reference external image-reference" href="https://weex.apache.org/docs/styles/common-styles.html#box-model"><img alt="modelo de caja CSS" src="https://img.alicdn.com/tfs/TB13u.4n5rpK1RjSZFhXXXSdXXa-377-340.png" /></a>
@@ -518,10 +518,10 @@
 </div>
 </div>
 <div class="section" id="posicionamiento">
-<span id="label-posicionamiento-css"></span><h2><span class="section-number">2.5. </span>Posicionamiento<a class="headerlink" href="#posicionamiento" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="label-posicionamiento-css"></span><h2>2.5. Posicionamiento<a class="headerlink" href="#posicionamiento" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Las opciones anteriores son bastante limitadas y es habitual que necesitemos más libertad a la hora de distribuir el contenido de los elementos en una página web. Una de las formas básicas de conseguirlo es a través del atributo <code class="docutils literal notranslate"><span class="pre">position</span></code>, que puede tener los valores <code class="docutils literal notranslate"><span class="pre">static</span></code>, <code class="docutils literal notranslate"><span class="pre">relative</span></code>, <code class="docutils literal notranslate"><span class="pre">absolute</span></code>, <code class="docutils literal notranslate"><span class="pre">fixed</span></code> y <code class="docutils literal notranslate"><span class="pre">sticky</span></code>.</p>
 <div class="section" id="posicionamiento-estatico">
-<h3><span class="section-number">2.5.1. </span>Posicionamiento estático<a class="headerlink" href="#posicionamiento-estatico" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>2.5.1. Posicionamiento estático<a class="headerlink" href="#posicionamiento-estatico" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El posicionamiento <code class="docutils literal notranslate"><span class="pre">static</span></code> corresponde al comportamiento por defecto que ya hemos visto: por ejemplo, cada elemento de tipo bloque se muestra en la línea siguiente al elemento anterior. Si un elemento no tiene asociado ningún valor en su propiedad <code class="docutils literal notranslate"><span class="pre">position</span></code> esta tomará el valor <code class="docutils literal notranslate"><span class="pre">static</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -617,7 +617,7 @@
   </script>
 </div></div>
 <div class="section" id="posicionamiento-relativo">
-<h3><span class="section-number">2.5.2. </span>Posicionamiento relativo<a class="headerlink" href="#posicionamiento-relativo" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>2.5.2. Posicionamiento relativo<a class="headerlink" href="#posicionamiento-relativo" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El posicionamiento <code class="docutils literal notranslate"><span class="pre">relative</span></code> nos permite cambiar la posición por defecto de un elemento, moviéndolo de la posición que le habría correspondido por defecto con ayuda de las propiedades <code class="docutils literal notranslate"><span class="pre">top</span></code>, <code class="docutils literal notranslate"><span class="pre">bottom</span></code>, <code class="docutils literal notranslate"><span class="pre">left</span></code> y <code class="docutils literal notranslate"><span class="pre">right</span></code>. Por poner un ejemplo, extensible a las otras tres propiedades, el valor de <code class="docutils literal notranslate"><span class="pre">left</span></code> es aquí la distancia del borde izquierdo de la ubicación donde se habría colocado la caja del elemento por defecto al borde izquierdo de la ubicación en la que finalmente se colocará. Si no se da valor a ninguna de estas cuatro proiedades, el elemento se mostrará exactamente en su lugar por defecto; como veremos más adelante, definir <code class="docutils literal notranslate"><span class="pre">position</span></code> como <code class="docutils literal notranslate"><span class="pre">relative</span></code>, aun sin cambiar ninguna de las propiedades <code class="docutils literal notranslate"><span class="pre">top</span></code>, <code class="docutils literal notranslate"><span class="pre">bottom</span></code>, <code class="docutils literal notranslate"><span class="pre">left</span></code> o <code class="docutils literal notranslate"><span class="pre">right</span></code>, puede ser muy útil para que un elemento se considere como <em>posicionado</em> cuando usemos el posicionamiento de tipo absoluto.</p>
 <p>Este posicionamiento es muy utilizado para realizar pequeños ajustes en la posición por defecto en la que se muestra un determinado elemento.</p>
 <p>Vamos a mover el cuadrado azul a la derecha del lavanda; para ello indicamos que vamos a sumar 100 píxeles a la posición de su parte superior y la misma cantidad a su posición izquierda:</p>
@@ -879,7 +879,7 @@
   </script>
 </div></div>
 <div class="section" id="posicionamiento-absoluto">
-<h3><span class="section-number">2.5.3. </span>Posicionamiento absoluto<a class="headerlink" href="#posicionamiento-absoluto" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>2.5.3. Posicionamiento absoluto<a class="headerlink" href="#posicionamiento-absoluto" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Si el posicionamiento <code class="docutils literal notranslate"><span class="pre">relative</span></code> que acabamos de ver permite colocar un elemento de forma relativa a su posición por defecto, el posicionamiento <code class="docutils literal notranslate"><span class="pre">absolute</span></code> permite colocarlo de forma relativa al elemento padre (más abajo matizaremos esto). En este caso, no <em>deja hueco</em>, porque nunca llega a tener una posición original propia. Además, de nuevo podemos usar las propiedades <code class="docutils literal notranslate"><span class="pre">top</span></code>, <code class="docutils literal notranslate"><span class="pre">bottom</span></code>, <code class="docutils literal notranslate"><span class="pre">left</span></code> y <code class="docutils literal notranslate"><span class="pre">right</span></code> para moverlo. Por poner un ejemplo, extensible a las otras tres propiedades, el valor de <code class="docutils literal notranslate"><span class="pre">left</span></code> es la distancia del borde izquierdo de la caja contenedora al borde izquierdo de la caja que resultará para el nuevo elemento. Un elemento con posicionamiento absoluto no influye en otros elementos ni otros elementos influyen en él.</p>
 <div class="highlight-css notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -951,7 +951,7 @@
 </div>
 </div>
 <div class="section" id="posicionamiento-fijo">
-<h3><span class="section-number">2.5.4. </span>Posicionamiento fijo<a class="headerlink" href="#posicionamiento-fijo" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>2.5.4. Posicionamiento fijo<a class="headerlink" href="#posicionamiento-fijo" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Al igual que con el posicionamiento absoluto, en el posicionamiento <code class="docutils literal notranslate"><span class="pre">fixed</span></code> no se aplica el flujo normal para el elemento correspondiente y este no deja ningún hueco. Las diferencias con el posicionamiento absoluto son:</p>
 <ul class="simple">
 <li><p>Los desplazamientos son relativos a la ventana del documento.</p></li>
@@ -964,7 +964,7 @@
 </div>
 </div>
 <div class="section" id="herramientas-para-desarrolladores">
-<h2><span class="section-number">2.6. </span>Herramientas para desarrolladores<a class="headerlink" href="#herramientas-para-desarrolladores" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>2.6. Herramientas para desarrolladores<a class="headerlink" href="#herramientas-para-desarrolladores" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Las herramientas para desarrolladores que incorporan los navegadores permiten no solo inspeccionar información referente a HTML, sino también verificar o modificar aspectos relativos a los estilos de CSS.</p>
 <div class="hazlotu admonition">
 <p class="admonition-title">Hazlo tú ahora</p>
@@ -972,7 +972,7 @@
 </div>
 </div>
 <div class="section" id="chuletas-de-resumen">
-<h2><span class="section-number">2.7. </span>Chuletas de resumen<a class="headerlink" href="#chuletas-de-resumen" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2>2.7. Chuletas de resumen<a class="headerlink" href="#chuletas-de-resumen" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Ahora que ya sabes HTML y CSS te puede venir bien tener a mano esta <a class="reference external" href="https://adam-marsden.co.uk/css-cheat-sheet">chuleta de CSS</a> de Adam Marsdem y esta <a class="reference external" href="https://acchou.github.io/html-css-cheat-sheet/html-css-cheat-sheet.html">otra de HTML y CSS</a> de acchou.</p>
 </div>
 </div>
