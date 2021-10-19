@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 19 oct
+      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 1.
     * - 21 sep
       - Recuerda mirar cada semana la sección ":ref:`label-actividades`" para ver las tareas a realizar antes de la clase de la semana siguiente.
     * - 10 sep
