@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 16 nov
+      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 2. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros.
     * - 19 oct
       - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 1.
     * - 21 sep
@@ -40,8 +42,6 @@ Novedades
 
 ..    * - 11 Ene
 ..      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 4. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros. El apartado opcional de autenticación supone un máximo de 2 puntos de la nota final de la práctica. Escribe al profesor para cualquier aclaración sobre tu nota. *Nota:* no dejes de leer el anuncio del día 8 de enero que aparece más abajo ya que contiene información muy importante sobre los exámenes de enero de la asignatura.
-..    * - 17 nov
-..      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 2. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros.
 ..    * - 21 sep
 ..      - En la sección ":ref:`label-actividades`" puedes encontrar las actividades a realizar antes de la clase del 29 de septiembre. Hay un pequeño cuestionario que tienes que rellenar antes de las 23.59 del día anterior. Recuerda que estos cuestionarios contribuyen a la nota final. Como has de consultar tras cada clase la sección ":ref:`label-actividades`" para comprobar si esa semana hay que realizar actividades antes de la clase siguiente, este tipo de anuncios recordándolo no se mostrará más.
 ..    * - 15 sep
@@ -60,8 +60,8 @@ Actividades previas a las clases
 .. - Antes de la clase del 14/12/2021: realiza la actividad ":ref:`label-comp-nube`", que incluye la lectura de una definición concisa de lo que es la computación en la nube y el visionado de unos vídeos; a continuación, contesta el `test sobre computación en la nube`_ (plazo límite: 13/12/2021, 23:59 horas). Después, realiza la actividad ":ref:`label-appengine`", en la que aprenderás a desplegar en la nube la aplicación del carrito, lo que necesitarás saber hacer por ti mismo como paso final de la práctica 4.
 .. - Antes de la clase del 07/12/2021: sigue la actividad ":ref:`label-gcloud`", donde se muestra cómo configurar tu entorno de trabajo para poder trabajar con la nube de Google, y, a continuación, la actividad ":ref:`label-gcp`" en la que tendrás que ver unos vídeos (duración: 40 minutos), leer unos tutoriales y realizar un pequeño ejercicio. A continuación, contesta el `test sobre Google Cloud Platform`_ (plazo límite: 06/12/2021, 23:59 horas)
 .. - Antes de la clase del 30/11/2021: practica con lo que se comenta en las actividades siguientes: ":ref:`label-local`", ":ref:`label-prueba-carrito`", ":ref:`label-api-cambio`", ":ref:`label-heroku`" y ":ref:`label-cors`". A continuación, contesta el `test sobre despliegue de aplicaciones web`_ (plazo límite: 29/11/2021, 23:59 horas)
-.. - Antes de la clase del 23/11/2021: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-curl`", ":ref:`label-cliente-rest`" y ":ref:`label-servidor-rest`"; la última incluye un vídeo con una traza de la aplicación del carrito (duración: 28 minutos; unos 20 a 1,5x). Para poder practicar con el código de esas actividades, tendrás que configurar tu entorno de trabajo como se indica en la actividad ":ref:`label-local`". A continuación, contesta el `test sobre implementación de servicios web`_ (plazo límite: 22/11/2021, 23:59 horas).
 
+- Antes de la clase del 23/11/2021: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-curl`", ":ref:`label-cliente-rest`" y ":ref:`label-servidor-rest`"; la última incluye un vídeo con una traza de la aplicación del carrito (duración: 28 minutos; unos 20 a 1,5x). Para poder practicar con el código de esas actividades, tendrás que configurar tu entorno de trabajo como se indica en la actividad ":ref:`label-local`". A continuación, contesta el `test sobre implementación de servicios web`_ (plazo límite: 22/11/2021, 23:59 horas).
 - Antes de la clase del 16/11/2021: lee detenidamente y practica con lo discutido en las actividades siguientes: ":ref:`label-intro-comp`", ":ref:`label-ejemplo-comp`" y ":ref:`label-avanzado-comp`". A continuación, contesta el `test sobre componentes web`_ (plazo límite: 15/11/2021, 23:59 horas).
 - Antes de la clase del 09/11/2021: realiza las actividades ":ref:`label-servicios-http`", ":ref:`label-servicios-promesas`", ":ref:`label-servicios-xhr`" y ":ref:`label-servicios-fetch`". Todas las actividades menos la segunda consisten principalmente en el estudio de una serie de vídeos (duración total de los vídeos: 50 minutos; unos 35 a 1,5x). Para la la segunda actividad, sin embargo, tienes que leer su contenido (tiempo estimado de lectura: 30 minutos). A continuación contesta el `test sobre acceso a servicios web`_ (plazo límite: 08/11/2021, 23:59 horas).
 - Antes de la clase del 02/11/2021: realiza la actividad ":ref:`label-js-objetos`" (en esta actividad tienes que leer un texto con un tiempo estimado de lectura de unos 80 minutos); después, lee y practica con lo que se discute en la actividad ":ref:`label-js-clausuras`" (tiempo estimado de lectura: 15 minutos). A continuación contesta el `test sobre prototipos y clausuras en JavaScript`_ (plazo límite: 01/11/2021, 23:59 horas). 

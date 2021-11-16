@@ -147,14 +147,14 @@ El *árbol ensombrecido* se comporta como un árbol DOM normal, salvo que no es 
 
 .. Note::
 
-  Cuando el atributo ``mode`` del objeto pasado como argumento a ``attachShadow`` toma el valor *cierto*, el código de JavaScript externo puede acceder al DOM ensombrecido mediante código como el siguiente:
+  Cuando el atributo ``mode`` del objeto pasado como argumento a ``attachShadow`` toma el valor *open*, el código de JavaScript externo puede acceder al DOM ensombrecido mediante código como el siguiente:
 
   .. code-block:: javascript
     :force:
 
     document.querySelector("calcula-operaciones").shadowRoot.querySelector("h1");
 
-  Esto, en principio, no es posible si ``mode`` vale *falso*. Realmente, aunque no los veremos, hay varios `trucos`_ que permiten acceder al árbol ensombrecido incluso aunque el atributo ``mode`` sea *falso*, por lo que se suele dejar a *verdadero*. Se espera que el código externo no interactúe más de lo estrictamente necesario con el contenido del elemento personalizado.
+  Esto, en principio, no es posible si ``mode`` vale *closed*. Realmente, aunque no los veremos, hay varios `trucos`_ que permiten acceder al árbol ensombrecido incluso aunque el atributo ``mode`` sea *closed*, por lo que se suele dejar a *open*. Se espera que el código externo no interactúe más de lo estrictamente necesario con el contenido del elemento personalizado.
 
 .. _`trucos`: https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af
 
