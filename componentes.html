@@ -324,11 +324,11 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Cuando el atributo <code class="docutils literal notranslate"><span class="pre">mode</span></code> del objeto pasado como argumento a <code class="docutils literal notranslate"><span class="pre">attachShadow</span></code> toma el valor <em>cierto</em>, el código de JavaScript externo puede acceder al DOM ensombrecido mediante código como el siguiente:</p>
+<p>Cuando el atributo <code class="docutils literal notranslate"><span class="pre">mode</span></code> del objeto pasado como argumento a <code class="docutils literal notranslate"><span class="pre">attachShadow</span></code> toma el valor <em>open</em>, el código de JavaScript externo puede acceder al DOM ensombrecido mediante código como el siguiente:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;calcula-operaciones&quot;</span><span class="p">).</span><span class="nx">shadowRoot</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Esto, en principio, no es posible si <code class="docutils literal notranslate"><span class="pre">mode</span></code> vale <em>falso</em>. Realmente, aunque no los veremos, hay varios <a class="reference external" href="https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af">trucos</a> que permiten acceder al árbol ensombrecido incluso aunque el atributo <code class="docutils literal notranslate"><span class="pre">mode</span></code> sea <em>falso</em>, por lo que se suele dejar a <em>verdadero</em>. Se espera que el código externo no interactúe más de lo estrictamente necesario con el contenido del elemento personalizado.</p>
+<p>Esto, en principio, no es posible si <code class="docutils literal notranslate"><span class="pre">mode</span></code> vale <em>closed</em>. Realmente, aunque no los veremos, hay varios <a class="reference external" href="https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af">trucos</a> que permiten acceder al árbol ensombrecido incluso aunque el atributo <code class="docutils literal notranslate"><span class="pre">mode</span></code> sea <em>closed</em>, por lo que se suele dejar a <em>open</em>. Se espera que el código externo no interactúe más de lo estrictamente necesario con el contenido del elemento personalizado.</p>
 </div>
 </div>
 <div class="section" id="caracteristicas-adicionales-de-los-componentes-web">
