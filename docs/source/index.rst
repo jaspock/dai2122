@@ -113,11 +113,11 @@ Puedes encontrar algo de información adicional en las diapositivas usadas en la
 
 El `código fuente`_ de estas páginas, escrito en reStructuredText, está disponible en Github.
 
-.. _`código fuente`: https://github.com/jaspock/dai2021
+.. _`código fuente`: https://github.com/jaspock/dai2122
 
 Puedes obtener una copia local de estas páginas (por ejemplo, para poder consultarlas sin conexión) ejecutando::
 
-  wget --mirror --no-parent --convert-links --page-requisites https://jaspock.github.io/dai2021/index.html
+  wget --mirror --no-parent --convert-links --page-requisites https://jaspock.github.io/dai2122/index.html
 
 
 Cómo compartir código con el profesor en clase, tutorías virtuales o consultas por escrito
