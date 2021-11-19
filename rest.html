@@ -202,7 +202,7 @@
 <p>En esta actividad vamos a explorar una API REST <em>de jueguete</em> para gestionar carritos de la compra que se encuentra ya desplegada en la nube. Para acceder a la API vamos a usar <code class="docutils literal notranslate"><span class="pre">curl</span></code>, un programa que permite realizar peticiones HTTP desde la línea de órdenes y observar la respuesta devuelta por el servidor. Ve probando en tu ordenador todos los pasos siguientes.</p>
 </div>
 <p>En primer lugar, vamos a asignar a una variable de entorno el URL base de la API:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">endpoint</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">whispering</span><span class="o">-</span><span class="n">plains</span><span class="o">-</span><span class="mf">89598.</span><span class="n">herokuapp</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">carrito</span><span class="o">/</span><span class="n">v1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">endpoint</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">damp</span><span class="o">-</span><span class="n">shore</span><span class="o">-</span><span class="mf">49160.</span><span class="n">herokuapp</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">carrito</span><span class="o">/</span><span class="n">v1</span>
 </pre></div>
 </div>
 <p><em>Nota:</em> la sintaxis que seguiremos aquí para manejar variables de entorno es la usada en sistemas basados en Unix. Para otros sistemas operativos, la sintaxis podría ser ligeramente diferente.</p>
@@ -263,7 +263,7 @@ curl --request DELETE --header &#39;content-type:application/json&#39; $endpoint
 </div>
 <div class="section" id="envio-de-peticiones-desde-javascript">
 <span id="label-cliente-rest"></span><h2>6.2. Envío de peticiones desde JavaScript<a class="headerlink" href="#envio-de-peticiones-desde-javascript" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Ahora vamos a ver cómo interactuar con la API del carrito desde JavaScript (en concreto, usando la API Fetch que hemos estudiado antes) por medio de una aplicación web de <a class="reference external" href="https://whispering-plains-89598.herokuapp.com/carrito.html">gestión de carritos de la compra</a>. Abre las DevTools de Google Chrome y estudia cada una de las peticiones Fetch realizadas por la aplicación. El código de este cliente de la API es el siguiente, que apenas incorpora novedades:</p>
+<p>Ahora vamos a ver cómo interactuar con la API del carrito desde JavaScript (en concreto, usando la API Fetch que hemos estudiado antes) por medio de una aplicación web de <a class="reference external" href="https://damp-shore-49160.herokuapp.com/carrito.html">gestión de carritos de la compra</a>. Abre las DevTools de Google Chrome y estudia cada una de las peticiones Fetch realizadas por la aplicación. El código de este cliente de la API es el siguiente, que apenas incorpora novedades:</p>
 <div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
   2
   3
@@ -1758,6 +1758,10 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
 <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;cambios&quot;</span>
 <span class="n">git</span> <span class="n">push</span> <span class="n">heroku</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p>Para volver a obtener el código de una aplicación si lo hemos perdido basta con hacer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">heroku</span> <span class="n">git</span><span class="p">:</span><span class="n">clone</span> <span class="o">-</span><span class="n">a</span> <span class="n">nombre</span><span class="o">-</span><span class="n">app</span><span class="o">-</span><span class="mi">12345</span>
 </pre></div>
 </div>
 <p>Finalmente, puedes usar el <a class="reference external" href="https://dashboard.heroku.com/">panel de control</a> de tu aplicación en Heroku para acceder a ciertas opciones adicionales de configuración. Por otro lado, en el panel de control de la <a class="reference external" href="https://data.heroku.com/">base de datos</a> PostgreSQL puedes visitar la sección <span class="guilabel">Dataclips</span> para poder ver las tablas de tu base de datos y lanzar consultas SQL sobre ellas.</p>
