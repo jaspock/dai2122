@@ -28,7 +28,7 @@ REST es una arquitectura para implementar servicios web sobre el protocolo HTTP 
   
 En primer lugar, vamos a asignar a una variable de entorno el URL base de la API::
 
-  export endpoint=https://whispering-plains-89598.herokuapp.com/carrito/v1
+  export endpoint=https://damp-shore-49160.herokuapp.com/carrito/v1
 
 *Nota:* la sintaxis que seguiremos aquí para manejar variables de entorno es la usada en sistemas basados en Unix. Para otros sistemas operativos, la sintaxis podría ser ligeramente diferente.
 
@@ -103,7 +103,7 @@ Ahora vamos a ver cómo interactuar con la API del carrito desde JavaScript (en 
   :language: html
   :linenos:
 
-.. _`gestión de carritos de la compra`: https://whispering-plains-89598.herokuapp.com/carrito.html
+.. _`gestión de carritos de la compra`: https://damp-shore-49160.herokuapp.com/carrito.html
 
 El código anterior muestra cómo hacer con ``fetch`` peticiones con verbos de HTTP diferentes a ``GET``, y que incluyen información tanto en las cabeceras como en el bloque de datos (*payload*).
 
@@ -494,6 +494,10 @@ Si haces cambios en la aplicación, basta con repetir estos pasos para actualiza
   git add .
   git commit -m "cambios"
   git push heroku master
+
+Para volver a obtener el código de una aplicación si lo hemos perdido basta con hacer::
+
+  heroku git:clone -a nombre-app-12345
 
 Finalmente, puedes usar el `panel de control`_ de tu aplicación en Heroku para acceder a ciertas opciones adicionales de configuración. Por otro lado, en el panel de control de la `base de datos`_ PostgreSQL puedes visitar la sección :guilabel:`Dataclips` para poder ver las tablas de tu base de datos y lanzar consultas SQL sobre ellas. 
 
