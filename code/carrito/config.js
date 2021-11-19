@@ -27,7 +27,7 @@ config.heroku= {
   connection: { 
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false }
-  },
+  }, 
   useNullAsDefault: true
 }
 

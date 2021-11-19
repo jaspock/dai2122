@@ -495,7 +495,7 @@ Si haces cambios en la aplicación, basta con repetir estos pasos para actualiza
   git commit -m "cambios"
   git push heroku master
 
-Para volver a obtener el código de una aplicación si lo hemos perdido basta con hacer::
+Para volver a obtener el código de una aplicación si lo hemos perdido, basta con hacer::
 
   heroku git:clone -a nombre-app-12345
 
