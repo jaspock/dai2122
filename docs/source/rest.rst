@@ -55,11 +55,8 @@ Para obtener la composición de un carrito, usaremos el verbo GET::
 Obtendremos una respuesta como la siguiente::
 
   {
-    "result": {
-      "nombre":"fada6",
-      "productos":[{"item":"queso","cantidad":1},
-                    {"item":"leche","cantidad":4}]
-    },
+    "result": [{"item":"queso","cantidad":1},
+               {"item":"leche","cantidad":4}],
     "error":null
   }
 
