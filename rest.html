@@ -228,11 +228,8 @@
 </div>
 <p>Obtendremos una respuesta como la siguiente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;nombre&quot;</span><span class="p">:</span><span class="s2">&quot;fada6&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;productos&quot;</span><span class="p">:[{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="s2">&quot;queso&quot;</span><span class="p">,</span><span class="s2">&quot;cantidad&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
-                  <span class="p">{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="s2">&quot;leche&quot;</span><span class="p">,</span><span class="s2">&quot;cantidad&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">}]</span>
-  <span class="p">},</span>
+  <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="s2">&quot;queso&quot;</span><span class="p">,</span><span class="s2">&quot;cantidad&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span><span class="s2">&quot;leche&quot;</span><span class="p">,</span><span class="s2">&quot;cantidad&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">}],</span>
   <span class="s2">&quot;error&quot;</span><span class="p">:</span><span class="n">null</span>
 <span class="p">}</span>
 </pre></div>
@@ -1760,7 +1757,7 @@ echo &#39;export PATH=$HOME/heroku/bin:$PATH&#39; &gt;&gt; $HOME/.bashrc
 <span class="n">git</span> <span class="n">push</span> <span class="n">heroku</span> <span class="n">master</span>
 </pre></div>
 </div>
-<p>Para volver a obtener el código de una aplicación si lo hemos perdido basta con hacer:</p>
+<p>Para volver a obtener el código de una aplicación si lo hemos perdido, basta con hacer:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">heroku</span> <span class="n">git</span><span class="p">:</span><span class="n">clone</span> <span class="o">-</span><span class="n">a</span> <span class="n">nombre</span><span class="o">-</span><span class="n">app</span><span class="o">-</span><span class="mi">12345</span>
 </pre></div>
 </div>
