@@ -338,7 +338,7 @@ Prueba de la aplicación del carrito
 
 A continuación, descarga el código del cliente y del servidor de la aplicación del carrito; clona para ello el `repositorio de la asignatura`_ haciendo::
 
-  git clone https://github.com/jaspock/dai2021.git
+  git clone https://github.com/jaspock/dai2122.git
 
 Entra en el directorio ``code/carrito`` y ejecuta::
 
@@ -425,7 +425,7 @@ Despliegue de la aplicación web en Heroku
 ------------------------------------------
 
 Cuando tengas la aplicación lista en modo local, puedes desplegarla en la plataforma en la nube de `Heroku`_ como sigue. 
-Copia para empezar la carpeta ``dai2021/code/carrito`` en otra ubicación de tu sistema. Al copiar la carpeta a una ubicación diferente haces que su contenido no esté ligado al repositorio de Github, ya que para desplegar la aplicación en Heroku necesitas vincularla a otro repositorio.
+Copia para empezar la carpeta ``dai2122/code/carrito`` en otra ubicación de tu sistema. Al copiar la carpeta a una ubicación diferente haces que su contenido no esté ligado al repositorio de Github, ya que para desplegar la aplicación en Heroku necesitas vincularla a otro repositorio.
 
 Instala el cliente de línea de órdenes (CLI, por *command-line interface*) de Heroku con las `instrucciones de esta página`_. En el caso de Linux basta con descargar el fichero con los binarios, descomprimirlo y añadir la carpeta ``bin`` a la variable ``PATH`` del sistema::
 
@@ -481,7 +481,7 @@ Para verlos conforme se van produciendo::
   heroku logs --tail
 
 .. _`Node Version Manager`: https://github.com/nvm-sh/nvm
-.. _`repositorio de la asignatura`: https://github.com/jaspock/dai2021
+.. _`repositorio de la asignatura`: https://github.com/jaspock/dai2122
 .. _`instrucciones de esta página`: https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 .. _`desplegar la aplicación`: https://devcenter.heroku.com/articles/git
 .. _`Heroku`: https://www.heroku.com/
