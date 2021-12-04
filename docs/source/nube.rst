@@ -176,7 +176,7 @@ Vamos a ver cómo desplegar la aplicación del carrito del tema anterior en Goog
 
 Para crear la instancia de Cloud SQL desde el terminal es necesario ejecutar desde la línea de órdenes::
 
-  gcloud sql instances create <instancia> --tier=db-f1-micro --region=europe-west3 --root-password=<contraseñaAdmin>
+  gcloud sql instances create <instancia> --tier=db-f1-micro --region=europe-west3 --root-password=<contraseñaAdmin> --database-version=MYSQL_8_0
 
 donde ``<instancia>`` es el nombre la instancia de base de datos y ``<contraseñaAdmin>`` la contraseña que queremos para el administrador de la instancia. 
 
@@ -186,19 +186,20 @@ La primera vez que ejecutes la línea anterior, obtendrás un mensaje informando
 
 .. Note::
 
-  La creación de la instancia de la base de datos puede tardar varios minutos. No sigas con este tutorial hasta que no se confirme su creación.
+  La creación de la instancia de la base de datos puede tardar varios minutos. No sigas con este tutorial hasta que no se confirme su creación. En algunos casos puede llegar hasta unos 15 minutos, así que puedes aprovechar para hacer otra cosa mientras.
 
-Ahora vamos a crear un nuevo usuario alternativo al administrador para acceder a la base de datos. Para ello, vamos a la `consola web de administración de instancias de bases de datos`_, seleccionamos la instancia creada anteriormente, y desde la pestaña :guilabel:`Usuarios` creamos una cuenta de usuario que pueda conectarse desde cualquier *host*.
+Ahora vamos a crear un nuevo usuario alternativo al administrador para acceder a la base de datos. Para ello ejecutamos::
 
-.. _`consola web de administración de instancias de bases de datos`: https://console.cloud.google.com/sql/instances/
+  gcloud sql users create <usuario> --host=% --instance=<instancia> --password=<contraseña>
 
 .. Note::
 
-  Desde la línea de órdenes se debería también poder conseguir crear un usuario haciendo::
+  Recuerda que todas las acciones que estamos ejecutando desde el terminal también podrían llevarse a cabo manualmente desde la consola web de Google Cloud Platform. De esta manera, sin embargo, no son automatizables. Por ejemplo, para crear un usuario alternativo para la bases de datos como acabamos de hacer, también podríamos ir a la `consola web de administración de instancias de bases de datos`_, seleccionar la instancia creada anteriormente, y desde la pestaña :guilabel:`Usuarios` crear una cuenta de usuario que pueda conectarse desde cualquier *host*.
+
+  A veces hay sutiles diferencias entre ambos enfoques. Por ejemplo, para versiones de MySQL anteriores a la 8, a los usuarios creados desde la línea de órdenes `había que concederles`_ mediante `GRANT` permisos adicionales.
   
-    gcloud sql users create <usuario> --host=% --instance=<instancia> --password=<contraseña>
-    
-  En el momento de escribir esto, sin embargo, la orden anterior no parece dar los privilegios adecuados al usuario (similares a los de administrador), lo que explica por qué para la creación de usuarios recurrimos a la consola web. 
+  .. _`consola web de administración de instancias de bases de datos`: https://console.cloud.google.com/sql/instances/
+  .. _`había que concederles`: https://cloud.google.com/sql/docs/mysql/create-manage-users#creating
 
 A continuación, creemos una base de datos en la instancia de Cloud SQL para nuestra aplicación::
 
