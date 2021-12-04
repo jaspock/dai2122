@@ -293,17 +293,17 @@ Comienza instalando `Node.js`_, el entorno que te permitirá ejecutar programas 
 
     sudo apt-get remove nodejs
 
-Este curso vamos a usar la versión 12 de Node.js. Descárgala con::
+Este curso vamos a usar la versión 14 de Node.js. Descárgala con::
 
-  curl -O https://nodejs.org/download/release/v12.13.1/node-v12.13.1-linux-x64.tar.gz
+  curl -O https://nodejs.org/download/release/v14.18.0/node-v14.18.0-linux-x64.tar.gz
 
 Descomprime el fichero anterior en tu directorio raíz::
 
-  tar xzf node-v12.13.1-linux-x64.tar.gz -C $HOME
+  tar xzf node-v14.18.0-linux-x64.tar.gz -C $HOME
 
 Añade el directorio ``bin`` a la variable ``PATH`` del sistema::
 
-  echo 'export PATH=$HOME/node-v12.13.1-linux-x64/bin:$PATH' >> $HOME/.bashrc
+  echo 'export PATH=$HOME/node-v14.18.0-linux-x64/bin:$PATH' >> $HOME/.bashrc
 
 Abre un nuevo terminal para que el nuevo valor de la variable de entorno ``PATH`` se aplique. Ahora deberías poder ver la versión de Node.js instalada con::
 
