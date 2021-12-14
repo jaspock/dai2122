@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 14 dic
+      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 3. Los apartados marcados con un asterisco cuentan la cuarta parte que los otros.
     * - 23 nov
       - Se ha retrasado el plazo de entrega de la práctica 3 hasta el domingo 28 de noviembre de 2021 a las 23.59.
     * - 16 nov

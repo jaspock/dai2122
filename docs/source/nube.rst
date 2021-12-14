@@ -255,6 +255,8 @@ Y para ir viéndolos en un terminal mientras se van generando::
 
   gcloud app logs tail 
 
+En la consola web los *logs* se muestran dentro de las opciones de ``Logging`` en el bloque ``Operations``.
+
 .. Important::
 
   Las instancias de Cloud SQL tienen un coste relativamente alto, por lo que tenemos que hacer un uso moderado de ellas para no agotar los créditos disponibles. En primer lugar, asegúrate de que, como se dice más arriba, indicas el tipo de instancia de base de datos ``db-f1-micro`` (el más `barato`_) y ningún otro al crear la instancia. Además, acostúmbrate a *dormir* tu instancia de base de datos cuando no vayas a trabajar en las siguientes horas con ella (no es necesario que lo hagas constantemente mientras estás desarrollando, pero sí cuando vayas a dejar de hacerlo) ejecutando::
