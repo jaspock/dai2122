@@ -541,6 +541,8 @@ funcione en ``index.html``. Cuando lo consigas, sustituye el encabezado de los c
 
 - Repasa el tema de componentes web visto en clase antes de comenzar a escribir los componentes web. Pon el código en JavaScript que se encarga de acceder a los servicios de Flickr y Wikipedia en la función ``connectedCallback`` de la clase correspondiente y no en el constructor. Pon también en ``connectedCallback`` el acceso al atributo ``data-tema``.
 
+- Asegúrate también de que tu componente web se actualiza correctamente ante cambios dinámicos en el valor del atributo ``data-tema``.
+
 - Ten en cuenta a qué apunta ``this`` en cada momento; tu código del interior del método ``then`` asociado a una promesa ``fetch`` se ejecutará (cuando el servidor devuelva su respuesta) de forma asíncrona fuera del contexto del componente web; en ese caso, ``this`` no estará apuntando al componente web, por lo que para acceder a sus propiedades tendrás que o bien usar funciones flecha o bien utilizar correctamente una clausura:
 
 
