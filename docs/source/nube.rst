@@ -300,9 +300,18 @@ Docker es una plataforma que nos permite distribuir *contenedores*, que incluyen
   .. _`crear una imagen`: https://docs.docker.com/language/nodejs/build-images/
   .. _`lanzar un contenedor`: https://docs.docker.com/language/nodejs/run-containers/
 
-En esta actividad vamos a ver cómo crear una imagen de nuestra aplicación del carrito y lanzar contenedores basados en ellas. Ambas acciones las realizaremos tanto localmente (para ello necesitas tener instalado ``docker`` en tu ordenador) como en GCP. A diferencia del ``Dockerfile`` del tutorial anterior, no nos basaremos en una `imagen del registro que ya contiene Node.js`_ (según se indicaba en la orden ``FROM``), sino que, para mostrar un ejemplo más general, nuestra imagen se basará en una imagen de Ubuntu.
+En esta actividad vamos a ver cómo crear una imagen de nuestra aplicación del carrito y lanzar contenedores basados en ellas. Ambas acciones las realizaremos tanto localmente (para ello necesitas tener instalado ``docker`` en tu ordenador) como en Google Cloud Platform. A diferencia del ``Dockerfile`` del tutorial anterior, no nos basaremos en una `imagen del registro que ya contiene Node.js`_ (según se indicaba en la orden ``FROM``), sino que, para mostrar un ejemplo más general, nuestra imagen se basará en una imagen de Ubuntu.
 
 .. _`imagen del registro que ya contiene Node.js`: https://hub.docker.com/_/node
+
+Para instalar Docker en Ubuntu se puede hacer::
+
+  sudo apt install docker.io
+  sudo groupadd docker
+  sudo gpasswd -a $USER docker
+  newgrp docker
+
+Las tres últimas líneas son para poder ejecutar ``docker`` sin permisos de administrador.
 
 Los dos ficheros relevantes de la aplicación del carrito para este apartado son ``.dockerignore`` (especifica qué ficheros o directorios ignorar en instrucciones como ``COPY``) y, principalmente, ``Dockerfile``, cuyo contenido es el siguiente:
 
@@ -320,13 +329,13 @@ Podemos ahora probar nuestra aplicación en ``localhost:8001``. Las siguientes i
 
   docker stop contenedor-carrito
   docker start contenedor-carrito
-  docker exec --interactive contenedor-carrito bash
+  docker exec --interactive --tty contenedor-carrito bash
   docker stop contenedor-carrito
   docker rm contenedor-carrito
 
 Un uso habitual de Docker es el de tener contenedores con todo el software necesario para programar una aplicación de forma que nos aseguremos que todos los miembros del equipo tengan exactamente el mismo entorno de desarrollo. En ese caso, es muy ineficiente tener que volver a crear la imagen ante cada cambio en el código que queramos probar. Otro enfoque también ineficiente pasa por editar los ficheros *dentro* del contenedor, pero en ese caso para hacer esos cambios persistentes, tendríamos que usar ciertas instrucciones que crean una nueva imagen a partir del estado de un contenedor. Una solución mucho mejor es usar *volúmenes*, que nos permiten enlazar ciertos directorios del contenedor con directorios externos::
 
-  docker run --detach --publish 8001:5000 --volume $PWD:/app --name contenedor-carrito imagen-carrito
+  docker run --detach --publish 8001:5000 --volume "$PWD":/app --name contenedor-carrito imagen-carrito
 
 Si editamos el contenido de ``public/carrito.html`` veremos cómo la aplicación web se actualiza inmediatamente. Cuando tengamos la aplicación lista, podemos crear la imagen copiando, esta vez sí, el contenido local al sistema de ficheros del contenedor. Para terminar, podemos eliminar el contenedor e incluso la imagen::
 

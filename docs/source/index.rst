@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 18 dic
+      - El examen de teoría y el de prácticas de la convocatoria de enero tendrán lugar el 18 de enero por la mañana en el horario y aulas que se indica en la `guía docente`_. Ambos exámenes se realizarán en el mismo laboratorio: el de teoría comenzará a las 9.00 y el de prácticas cuando termine este, con un pequeño descanso entre ambos. El examen de teoría tendrá una duración aproximada de 100 minutos y el de prácticas de 120 minutos. El examen de prácticas lo podrás realizar bien con tu portátil bien con el ordenador del laboratorio. Asegúrate de traer una versión funcional de tu práctica 4, ya que el examen de prácticas consistirá en una ampliación de esta. Los resultados de la evaluación de la práctica 4 se publicarán previsiblemente unos días antes del examen, pero probablemente no necesitarás el informe del profesor para saber qué cosas no funcionan de la práctica que entregaste y corregirlas antes del examen.
     * - 14 dic
       - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 3. Los apartados marcados con un asterisco cuentan la octava parte que los otros.
     * - 23 nov
