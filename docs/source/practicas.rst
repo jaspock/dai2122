@@ -34,7 +34,7 @@ Este es el calendario de cada uno de los entregables de la asignatura. No se adm
       - 25%
     * - Práctica #4
       - `Una aplicación en la nube`_
-      - 23 diciembre 2021
+      - 30 diciembre 2021
       - 20 horas
       - 30%
 
