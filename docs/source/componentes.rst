@@ -376,7 +376,7 @@ Ahora vamos a modularizar y encapsular el diseño anterior para que otros puedan
 
       <h1>Definición de componentes web</h1>
       
-      <calcula-operaciones a="4" b="5">
+      <calcula-operaciones data-a="4" data-b="5">
         <span slot="title">Operaciones binarias</span>
         <span slot="mult">Multiplicación</span>
       </calcula-operaciones>
@@ -518,7 +518,7 @@ El `código final`_ de nuestro componente web es el siguiente:
 
     class Operaciones extends HTMLElement {
 
-      static get observedAttributes() { return ['a', 'b']; }
+      static get observedAttributes() { return ['data-a', 'data-b']; }
 
       constructor() {
         super();

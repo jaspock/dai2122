@@ -1964,7 +1964,7 @@ Acceso a servicios web de terceros
 
     function movie() {
       var g= 1;  
-      fetch('http://example.com/movies.json/3400231').
+      fetch('http://example.com/movies.json/3400231')
       .then( r => {
         g++;
         return r.json();
