@@ -29,6 +29,8 @@ Novedades
     :header-rows: 0
     :class: tablita
 
+    * - 11 ene
+      - Ya puedes consultar en la `web del departamento`_ las notas de la práctica 4. Los apartados marcados con un asterisco cuentan una cuarta parte que los otros.
     * - 21 dic
       - La fecha de entrega de la práctica 4 se ha retrasado hasta el 30 de diciembre a las 23.59.
     * - 18 dic
